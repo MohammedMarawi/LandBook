@@ -24,7 +24,6 @@ router
   .get(Landcontrollers.getAllLands)
   .post(
     authcontrollers.protect,
-    authcontrollers.restrictTo('admin'),
     Landcontrollers.createLand
   ); // chain middleware
 router
