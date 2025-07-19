@@ -1,39 +1,66 @@
 const express = require('express');
 const router = express.Router();
-const bookingController = require('../controllers/booking.controller');
-const { protect, restrictTo } = require('../middleware/auth');
 
-// Public routes
+const bookingController = require('../controllers/booking.controller');
+const authController = require('../controllers/authController');
+
+
+
 router.get('/land/:landId/availability', bookingController.checkLandAvailability);
 
-// Protected routes
-router.use(protect); // All routes after this middleware are protected
 
-// User routes
-router.get('/my-active-booking', bookingController.getUserActiveBooking);
-router.post('/', bookingController.createBooking);
+router.get(
+  '/my-active-booking',
+  authController.protect,
+  bookingController.getUserActiveBooking
+);
 
-// Admin routes
-router.use(restrictTo('admin'));
+router.post(
+  '/',
+  authController.protect,
+  bookingController.createBooking
+);
 
-router.route('/')
-  .get(bookingController.getAllBookings);
+router.get(
+  '/',
+  authController.protect,
+  authController.restrictTo('admin'),
+  bookingController.getAllBookings
+);
 
-router.route('/:id')
-  .get(bookingController.getBookingById)
-  .patch(bookingController.updateBooking)
-  .delete(bookingController.deleteBooking);
+router.get(
+  '/land/:landId',
+  authController.protect,
+  authController.restrictTo('admin'),
+  bookingController.getBookingsByLand
+);
 
-router.get('/land/:landId', bookingController.getBookingsByLand);
-router.post('/expire-old', bookingController.expireOldBookings);
+router.post(
+  '/expire-old',
+  authController.protect,
+  authController.restrictTo('admin'),
+  bookingController.expireOldBookings
+);
+
+
+router
+  .route('/:id')
+  .get(
+    authController.protect,
+    authController.restrictTo('admin'),
+    bookingController.getBookingById
+  )
+  .patch(
+    authController.protect,
+    authController.restrictTo('admin'),
+    bookingController.updateBooking
+  )
+  .delete(
+    authController.protect,
+    authController.restrictTo('admin'),
+    bookingController.deleteBooking
+  );
+
+
 
 module.exports = router;
-
-
-//GET /api/bookings/user/:userId   (get all booking with user)
-// GET /api/bookings/land/:landId  (get all booking with land)
-// PATCH /api/bookings/:id/status  (confirm booking or change status)
-//POST /api/bookings/check-availability (Checking the availability of land within a certain period)
-// GET /api/bookings/stats (num total booking)
-
-

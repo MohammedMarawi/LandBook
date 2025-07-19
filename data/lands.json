@@ -1,0 +1,498 @@
+[
+  {
+    "title": "Sun Valley Orchard - Homs ",
+    "price": 50000,
+    "area": 100,
+    "location": {
+      "city": "Al-Rastan",
+      "governorate": "Homs",
+      "coordinates": {
+        "type": "Point",
+        "coordinates": [36.7106, 34.8496]
+      },
+      "address": "Countryside of Homs"
+    },
+    "climate": "Mediterranean",
+    "averageRainfall": 668,
+    "temperatureRange": {
+      "min": 5,
+      "max": 40
+    },
+    "suitableFor": ["Pistachios", "Figs"],
+    "currentCrops": [
+      "Pistachios trees",
+      "Figs trees",
+      "Cucumbers trees",
+      "Dates trees",
+      "Grapes trees"
+    ],
+    "features": {
+      "waterSource": ["Well", "River", "Spring"],
+      "soilType": ["Clay", "Sandy"]
+    },
+    "treeAge": 14,
+    "description": "This land is well-suited for growing a wide range of crops. It offers excellent soil and reliable water supply.",
+    "investmentOpportunities": [
+      {
+        "type": "Partial investment",
+        "minInvestment": 5000,
+        "expectedReturn": 15,
+        "returnPeriod": "Annual"
+      }
+    ],
+    "images": [
+      "farm1.jpg",
+      "farm2.jpg",
+      "farm3.jpg",
+      "farm4.jpg",
+      "farm5.jpg",
+      "farm6.jpg",
+      "farm7.jpg"
+    ],
+    "isApproved": true,
+    "createdAt": "2025-07-15T00:00:00Z"
+  },
+  {
+    "title": "Golden Horizon Estate – Aleppo",
+    "price": 100000,
+    "area": 200,
+    "location": {
+      "city": "Azaz",
+      "governorate": "Aleppo",
+      "coordinates": {
+        "type": "Point",
+        "coordinates": [37.05, 36.585]
+      },
+      "address": "South Aleppo Farmlands - near Saraqib Road"
+    },
+    "climate": "Semi-arid",
+    "averageRainfall": 550,
+    "temperatureRange": {
+      "min": 4,
+      "max": 38
+    },
+    "suitableFor": ["Olives", "Grapes"],
+    "currentCrops": [
+      "Olive trees",
+      "Grapes trees",
+      "Cucumbers trees",
+      "Dates trees"
+    ],
+    "features": {
+      "waterSource": ["River", "Rain-fed", "Irrigation system"],
+      "soilType": ["Clay", "Loamy"]
+    },
+    "treeAge": 4,
+    "description": "Located in a fertile area, this property provides optimal conditions for agricultural production.",
+    "investmentOpportunities": [
+      {
+        "type": "Full ownership",
+        "minInvestment": 3000,
+        "expectedReturn": 20,
+        "returnPeriod": "Seasonal"
+      }
+    ],
+    "images": [
+      "farm2.jpg",
+      "farm3.jpg",
+      "farm4.jpg",
+      "farm5.jpg",
+      "farm6.jpg",
+      "farm7.jpg",
+      "farm8.jpg"
+    ],
+    "isApproved": true,
+    "createdAt": "2025-07-15T00:00:00Z"
+  },
+  {
+    "title": "Emerald Fields – Damascus",
+    "price": 150000,
+    "area": 300,
+    "location": {
+      "city": "Ghouta",
+      "governorate": "Damascus",
+      "coordinates": {
+        "type": "Point",
+        "coordinates": [36.4579, 33.5606]
+      },
+      "address": "East Damascus Valley - near Al-Qalamoun Hills"
+    },
+    "climate": "Arid",
+    "averageRainfall": 484,
+    "temperatureRange": {
+      "min": 3,
+      "max": 37
+    },
+    "suitableFor": ["Tomatoes", "Cucumbers"],
+    "currentCrops": ["Tomatoes trees", "Cucumbers trees", "Olive trees"],
+    "features": {
+      "waterSource": ["Well", "Spring", "Irrigation system"],
+      "soilType": ["Silty", "Peaty", "Chalky"]
+    },
+    "treeAge": 20,
+    "description": "A highly productive farm with water access and fertile land, suitable for long-term investment.",
+    "investmentOpportunities": [
+      {
+        "type": "Partnership",
+        "minInvestment": 4000,
+        "expectedReturn": 25,
+        "returnPeriod": "Seasonal"
+      }
+    ],
+    "images": [
+      "farm3.jpg",
+      "farm4.jpg",
+      "farm5.jpg",
+      "farm6.jpg",
+      "farm7.jpg",
+      "farm8.jpg",
+      "farm9.jpg"
+    ],
+    "isApproved": true,
+    "createdAt": "2025-07-15T00:00:00Z"
+  },
+  {
+    "title": "Valley Breeze Land – Latakia",
+    "price": 200000,
+    "area": 400,
+    "location": {
+      "city": "Jableh",
+      "governorate": "Latakia",
+      "coordinates": {
+        "type": "Point",
+        "coordinates": [35.8492, 35.35]
+      },
+      "address": "North Latakia Plains - close to Al-Haffah Forest"
+    },
+    "climate": "Coastal",
+    "averageRainfall": 787,
+    "temperatureRange": {
+      "min": 1,
+      "max": 42
+    },
+    "suitableFor": ["Wheat", "Barley"],
+    "currentCrops": [
+      "Wheat trees",
+      "Barley trees",
+      "Potatoes trees",
+      "Rosemary trees"
+    ],
+    "features": {
+      "waterSource": ["Rain-fed", "Irrigation system", "Well"],
+      "soilType": ["Clay", "Peaty", "Loamy"]
+    },
+    "treeAge": 15,
+    "description": "The land is ideal for cultivating vegetables and trees, with existing irrigation systems in place.",
+    "investmentOpportunities": [
+      {
+        "type": "Leasing",
+        "minInvestment": 7000,
+        "expectedReturn": 30,
+        "returnPeriod": "Seasonal"
+      }
+    ],
+    "images": [
+      "farm4.jpg",
+      "farm5.jpg",
+      "farm6.jpg",
+      "farm7.jpg",
+      "farm8.jpg",
+      "farm9.jpg",
+      "farm10.jpg"
+    ],
+    "isApproved": true,
+    "createdAt": "2025-07-15T00:00:00Z"
+  },
+  {
+    "title": "Olive Sun Plains – Hama",
+    "price": 250000,
+    "area": 500,
+    "location": {
+      "city": "Salamiyah",
+      "governorate": "Hama",
+      "coordinates": {
+        "type": "Point",
+        "coordinates": [37.0729, 35.0119]
+      },
+      "address": "West Hama Fields - by the Orontes River"
+    },
+    "climate": "Mountainous",
+    "averageRainfall": 391,
+    "temperatureRange": {
+      "min": 1,
+      "max": 35
+    },
+    "suitableFor": ["Cotton", "Citrus"],
+    "currentCrops": [
+      "Corn trees",
+      "Cotton trees",
+      "Cucumbers trees",
+      "Dates trees"
+    ],
+    "features": {
+      "waterSource": ["Rainwater", "Rain-fed", "River"],
+      "soilType": ["Peaty", "Loamy", "Sandy"]
+    },
+    "treeAge": 25,
+    "description": "It is an attractive investment opportunity with potential for expansion in farming and agribusiness.",
+    "investmentOpportunities": [
+      {
+        "type": "Mortgage",
+        "minInvestment": 6000,
+        "expectedReturn": 10,
+        "returnPeriod": "Annual"
+      }
+    ],
+    "images": [
+      "farm5.jpg",
+      "farm6.jpg",
+      "farm7.jpg",
+      "farm8.jpg",
+      "farm9.jpg",
+      "farm10.jpg",
+      "farm11.jpg"
+    ],
+    "isApproved": true,
+    "createdAt": "2025-07-15T00:00:00Z"
+  },
+  {
+    "title": "Fig Orchard in Daraa – Rich Soil and Rainwater Supply",
+    "price": 300000,
+    "area": 600,
+    "location": {
+      "city": "Houran",
+      "governorate": "Daraa",
+      "coordinates": {
+        "type": "Point",
+        "coordinates": [36.1022, 32.6097]
+      },
+      "address": "Green Belt of Daraa - near Jordanian Border"
+    },
+    "climate": "Semi-arid",
+    "averageRainfall": 707,
+    "temperatureRange": {
+      "min": 2,
+      "max": 38
+    },
+    "suitableFor": ["Fruits", "Dates"],
+    "currentCrops": [
+      "Cotton trees",
+      "Figs trees",
+      "Thyme trees",
+      "Grapes trees"
+    ],
+    "features": {
+      "waterSource": ["Spring", "Rain-fed", "River"],
+      "soilType": ["Chalky", "Sandy", "Silty"]
+    },
+    "treeAge": 30,
+    "description": "Surrounded by a natural landscape, this land offers a tranquil farming environment with high returns.",
+    "investmentOpportunities": [
+      {
+        "type": "Partial investment",
+        "minInvestment": 2000,
+        "expectedReturn": 10,
+        "returnPeriod": "Annual"
+      }
+    ],
+    "images": [
+      "farm6.jpg",
+      "farm7.jpg",
+      "farm8.jpg",
+      "farm9.jpg",
+      "farm10.jpg",
+      "farm11.jpg",
+      "farm12.jpg"
+    ],
+    "isApproved": false,
+    "createdAt": "2025-07-15T00:00:00Z"
+  },
+  {
+    "title": "Barley Farming Land in Idlib – High Yield Potential",
+    "price": 350000,
+    "area": 700,
+    "location": {
+      "city": "Sarmada",
+      "governorate": "Idlib",
+      "coordinates": {
+        "type": "Point",
+        "coordinates": [36.6744, 36.1411]
+      },
+      "address": "Rural Idlib Meadows - close to Ariha district"
+    },
+    "climate": "Mediterranean",
+    "averageRainfall": 502,
+    "temperatureRange": {
+      "min": 0,
+      "max": 36
+    },
+    "suitableFor": ["Vegetables", "Fruits"],
+    "currentCrops": ["Barley trees", "Corn trees", "Cucumbers trees"],
+    "features": {
+      "waterSource": "Spring",
+      "soilType": ["Loamy", "Sandy", "Clay", "Chalky"]
+    },
+    "treeAge": 35,
+    "description": "This land is located near major roads, making it accessible for logistics and product distribution.",
+    "investmentOpportunities": [
+      {
+        "type": "Full ownership",
+        "minInvestment": 7000,
+        "expectedReturn": 15,
+        "returnPeriod": "Seasonal"
+      }
+    ],
+    "images": [
+      "farm7.jpg",
+      "farm8.jpg",
+      "farm9.jpg",
+      "farm10.jpg",
+      "farm11.jpg",
+      "farm12.jpg",
+      "farm13.jpg"
+    ],
+    "isApproved": true,
+    "createdAt": "2025-07-15T00:00:00Z"
+  },
+  {
+    "title": "Cucumber Greenhouse Land in Raqqa – Accessible and Ready",
+    "price": 400000,
+    "area": 800,
+    "location": {
+      "city": "Al-Mansurah",
+      "governorate": "Raqqa",
+      "coordinates": {
+        "type": "Point",
+        "coordinates": [39.016, 35.9467]
+      },
+      "address": "East Raqqa Basin - near Balikh River Route"
+    },
+    "climate": "Arid",
+    "averageRainfall": 397,
+    "temperatureRange": {
+      "min": 0,
+      "max": 25
+    },
+    "suitableFor": ["Olives", "Tomatoes"],
+    "currentCrops": ["Rosemary trees", "Thyme trees"],
+    "features": {
+      "waterSource": ["Well", "Rainwater", "Irrigation system"],
+      "soilType": ["Sandy", "Clay", "Silty"]
+    },
+    "treeAge": 40,
+    "description": "The land features an excellent combination of climate and soil, ensuring consistent crop yields.",
+    "investmentOpportunities": [
+      {
+        "type": "Partnership",
+        "minInvestment": 8000,
+        "expectedReturn": 45,
+        "returnPeriod": "Annual"
+      }
+    ],
+    "images": [
+      "farm8.jpg",
+      "farm9.jpg",
+      "farm10.jpg",
+      "farm11.jpg",
+      "farm12.jpg",
+      "farm13.jpg",
+      "farm14.jpg"
+    ],
+    "isApproved": true,
+    "createdAt": "2025-07-15T00:00:00Z"
+  },
+  {
+    "title": "Grape Vineyard in Tartus – Excellent Investment Opportunity",
+    "price": 450000,
+    "area": 900,
+    "location": {
+      "city": "Safita",
+      "governorate": "Tartus",
+      "coordinates": {
+        "type": "Point",
+        "coordinates": [36.1111, 34.8953]
+      },
+      "address": "South Tartus Groves - by the Coastal Highway"
+    },
+    "climate": "Mediterranean",
+    "averageRainfall": 360,
+    "temperatureRange": {
+      "min": 0,
+      "max": 20
+    },
+    "suitableFor": ["Cotton", "Grapes"],
+    "currentCrops": ["Thyme trees", "Rosemary trees", "Dates trees"],
+    "features": {
+      "waterSource": ["River", "Rainwater", "Irrigation system", "Rain-fed"],
+      "soilType": ["Clay", "Loamy", "Silty"]
+    },
+    "treeAge": 55,
+    "description": "Ideal for eco-agriculture or organic farming, supported by natural water resources.",
+    "investmentOpportunities": [
+      {
+        "type": "Leasing",
+        "minInvestment": 9000,
+        "expectedReturn": 50,
+        "returnPeriod": "Seasonal"
+      }
+    ],
+    "images": [
+      "farm9.jpg",
+      "farm10.jpg",
+      "farm11.jpg",
+      "farm12.jpg",
+      "farm13.jpg",
+      "farm14.jpg",
+      "farm15.jpg"
+    ],
+    "isApproved": false,
+    "createdAt": "2025-07-15T00:00:00Z"
+  },
+  {
+    "title": "Large Wheat Farm in Deir ez-Zor with Irrigation Access",
+    "price": 500000,
+    "area": 1000,
+    "location": {
+      "city": "Al-Busayrah",
+      "governorate": "Deir ez-Zor",
+      "coordinates": {
+        "type": "Point",
+        "coordinates": [40.897, 35.833]
+      },
+      "address": "Western Deir ez-Zor Lands - near Euphrates Bend"
+    },
+    "climate": "Mountainous",
+    "averageRainfall": 467,
+    "temperatureRange": {
+      "min": 4,
+      "max": 28
+    },
+    "suitableFor": ["Pistachios", "Citrus"],
+    "currentCrops": ["Potatoes trees", "Pistachios trees", "Grapes trees"],
+    "features": {
+      "waterSource": ["Spring", "Well", "River"],
+      "soilType": ["Chalky", "Sandy", "Silty"]
+    },
+    "treeAge": 60,
+    "description": "A perfect investment for those looking to enter the agriculture sector with ready-to-use land.",
+    "investmentOpportunities": [
+      {
+        "type": "Sale",
+        "minInvestment": 10000,
+        "expectedReturn": 55,
+        "returnPeriod": "Annual"
+      }
+    ],
+    "images": [
+      "farm10.jpg",
+      "farm11.jpg",
+      "farm12.jpg",
+      "farm13.jpg",
+      "farm14.jpg",
+      "farm15.jpg",
+      "farm16.jpg"
+    ],
+    "isApproved": true,
+    "createdAt": "2025-07-15T00:00:00Z"
+  }
+]

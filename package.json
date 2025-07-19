@@ -2,23 +2,45 @@
   "dependencies": {
     "axios": "^1.10.0",
     "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
+    "crypto": "^1.0.1",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
+    "express-rate-limit": "^8.0.0",
     "jsonwebtoken": "^9.0.2",
+    "mailtrap": "^4.2.0",
     "mongodb": "^6.17.0",
-    "mongoose": "^8.16.0"
+    "mongoose": "^8.16.0",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.10.1",
+    "validator": "^13.15.15"
   },
-  "name": "landbook",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "mongodb-memory-server": "^10.1.4",
+    "nodemon": "^3.0.2",
+    "supertest": "^6.3.3"
+  },
+  "name": "landbook-booking",
   "version": "1.0.0",
-  "main": "servers.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
-  "keywords": [],
+  "keywords": [
+    "land",
+    "booking",
+    "real-estate",
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "Land booking system focusing only on booking logic"
 }

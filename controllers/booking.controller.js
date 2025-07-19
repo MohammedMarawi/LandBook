@@ -1,270 +1,273 @@
 const mongoose = require('mongoose');
-const Booking = require('../models/Booking');
-const Land = require('../models/Land');
-const User = require('../models/User');
+const Booking = require('../models/booking/Booking');
 const AppError = require('../utils/appError');
 const catchAsync = require('../utils/catchAsync');
 const APIFeatures = require('../utils/apiFeatures');
+const User = require('../models/usersModel.js')
+const { formatDateTimeInDamascus } = require('../utils/dateUtils');
+const {
+  updateExpiredBookings,
+  userHasActiveBooking,
+  landIsReserved
+} = require('../services/booking.service');
+
+
+
 
 // Create a new booking
 const createBooking = catchAsync(async (req, res, next) => {
-  const { landId, phoneNumber } = req.body;
-  const userId = req.user.id; // Assuming user is authenticated
+  const { land, phoneNumber} = req.body;
+  const userId = req.user.id;
 
-  // Check if user has an active booking
-  const existingBooking = await Booking.hasActiveBooking(userId);
-  if (existingBooking) {
-    return next(new AppError('لديك حجز نشط بالفعل. لا يمكنك حجز أرض أخرى حتى يتم التعامل مع الحجز الحالي.', 400));
+  if(req.user.role !== "inverstor") 
+  {
+    await User.findByIdAndUpdate(req.user.id , {role: "inverstor"}) ;
   }
 
-  // Check if land is available
-  const land = await Land.findById(landId);
-  if (!land) {
-    return next(new AppError('الأرض غير موجودة.', 404));
+  // Step 1: Check if user already has active booking
+  if (await userHasActiveBooking(userId)) {
+    return next(new AppError(
+      'You already have an active booking. You cannot book another land until the current booking is processed.',
+      400
+    ));
   }
 
-  if (land.status !== 'available') {
-    return next(new AppError('الأرض غير متاحة للحجز حالياً.', 400));
+  // Step 2: Check if the land is already reserved
+  if (await landIsReserved(land)) {
+    return next(new AppError(
+      'This land is currently reserved by another user. Please try again later.',
+      400
+    ));
   }
 
-  // Create booking
+  // Step 3: Set booking end time (24 hours later)
+  const endDate = new Date(Date.now() + 24 * 60 * 60 * 1000);
+
+  // Step 4: Create the booking
   const booking = await Booking.create({
-    land: landId,
-    user: userId,
+    land,
+    user : userId,
     phoneNumber,
-    endDate: new Date(Date.now() + 24 * 60 * 60 * 1000) // 24 hours
+    endDate
   });
 
-  // Update land status
-  await Land.findByIdAndUpdate(landId, {
-    status: 'booked',
-    currentBooking: booking._id,
-    bookingExpiresAt: booking.endDate
-  });
-
+  // Step 5: Send response
   res.status(201).json({
     status: 'success',
-    message: 'تم حجز الأرض بنجاح، سيتم التواصل معك قريباً من قبل الإدارة.',
-    data: {
-      booking
-    },
+    message: 'Land booked successfully. You will be contacted soon by the administration.',
+    data: { booking },
   });
 });
 
-// Get all bookings (with filtering)
+
+
+
+
+// Get all bookings (with filtering, sorting, pagination, and field limiting)
 const getAllBookings = catchAsync(async (req, res, next) => {
-  const features = new APIFeatures(Booking.find(), req.query)
+  // Build query with API features
+  const queryBuilder = new APIFeatures(Booking.find(), req.query)
     .filter()
     .sort()
     .limitFields()
     .paginate();
-  
-  const bookings = await features.query;
 
+  // Execute query
+  const bookings = await queryBuilder.query;
+
+  // Send response
   res.status(200).json({
     status: 'success',
     results: bookings.length,
-    data: {
-      bookings
-    },
+    data: { bookings }
   });
 });
+
+
 
 // Get booking by ID
 const getBookingById = catchAsync(async (req, res, next) => {
   const { id } = req.params;
 
+  // Validate booking ID format
   if (!mongoose.Types.ObjectId.isValid(id)) {
     return next(new AppError('Invalid booking ID', 400));
   }
 
+  // Retrieve booking
   const booking = await Booking.findById(id);
   if (!booking) {
     return next(new AppError('Booking not found', 404));
   }
 
-  res.status(200).json({ status: 'success', data: { booking } });
+  // Send success response
+  res.status(200).json({
+    status: 'success',
+    data: { booking }
+  });
 });
+
+
 
 // Update booking (admin only)
 const updateBooking = catchAsync(async (req, res, next) => {
   const { id } = req.params;
-  const { status, adminNotes, meetingDate } = req.body;
-  
+  const { status, adminNotes, meetingDate , endDate } = req.body;
+
+  // Validate ID
   if (!mongoose.Types.ObjectId.isValid(id)) {
     return next(new AppError('Invalid booking ID', 400));
   }
-  
+
+  // Fetch booking
   const booking = await Booking.findById(id);
   if (!booking) {
     return next(new AppError('Booking not found', 404));
   }
 
-  // Update booking
-  const updatedBooking = await Booking.findByIdAndUpdate(id, {
+  // Prepare update fields
+  const updates = {
+    endDate,
     status,
     adminNotes,
     meetingDate: meetingDate ? new Date(meetingDate) : null,
-    meetingScheduled: !!meetingDate,
+    meetingScheduled: Boolean(meetingDate),
     confirmedAt: status === 'confirmed' ? new Date() : booking.confirmedAt
-  }, {
+  };
+
+  // Perform update
+  const updatedBooking = await Booking.findByIdAndUpdate(id, updates, {
     new: true,
     runValidators: true,
   });
 
-  // Update land status based on booking status
-  const land = await Land.findById(booking.land);
-  if (land) {
-    let newLandStatus = 'available';
-    let newBookingExpiresAt = null;
-
-    switch (status) {
-      case 'confirmed':
-        newLandStatus = 'booked';
-        newBookingExpiresAt = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000); // 7 days
-        break;
-      case 'completed':
-        newLandStatus = 'rented';
-        newBookingExpiresAt = null;
-        break;
-      case 'cancelled':
-      case 'expired':
-        newLandStatus = 'available';
-        newBookingExpiresAt = null;
-        break;
-      default:
-        newLandStatus = land.status;
-    }
-
-    await Land.findByIdAndUpdate(booking.land, {
-      status: newLandStatus,
-      bookingExpiresAt: newBookingExpiresAt,
-      currentBooking: newLandStatus === 'available' ? null : booking._id
-    });
-  }
-
-  res.status(200).json({ status: 'success', data: { booking: updatedBooking } });
+  // Send response
+  res.status(200).json({
+    status: 'success',
+    data: { booking: updatedBooking }
+  });
 });
 
-// Delete booking
+
+
+// Delete booking (admin only)
 const deleteBooking = catchAsync(async (req, res, next) => {
   const { id } = req.params;
 
+  // Validate booking ID
   if (!mongoose.Types.ObjectId.isValid(id)) {
     return next(new AppError('Invalid booking ID', 400));
   }
 
+  // Find booking
   const booking = await Booking.findById(id);
   if (!booking) {
     return next(new AppError('Booking not found', 404));
   }
 
-  // Update land status back to available
-  await Land.findByIdAndUpdate(booking.land, {
-    status: 'available',
-    currentBooking: null,
-    bookingExpiresAt: null
-  });
+  // Delete booking
+  await booking.deleteOne(); // أكثر وضوحًا من findByIdAndDelete(id)
 
-  await Booking.findByIdAndDelete(id);
-  
+  // Send response
   res.status(200).json({
     status: 'success',
     message: 'Booking deleted successfully.',
-    data: {
-      booking
-    }
+    data: { booking }
   });
 });
+
+
 
 // Get user's active booking
 const getUserActiveBooking = catchAsync(async (req, res, next) => {
   const userId = req.user.id;
 
+  // Check if the user has an active booking
   const activeBooking = await Booking.hasActiveBooking(userId);
-  
+
+  // Prepare response payload
+  const response = {
+    hasActiveBooking: Boolean(activeBooking),
+    booking: activeBooking || null
+  };
+
+  // Send response
   res.status(200).json({
     status: 'success',
-    data: {
-      hasActiveBooking: !!activeBooking,
-      booking: activeBooking
-    }
+    data: response
   });
 });
 
-// Get bookings by land
-const getBookingsByLand = catchAsync(async (req, res, next) => {
-  const { landId } = req.params;
 
-  if (!mongoose.Types.ObjectId.isValid(landId)) {
-    return next(new AppError('Invalid land ID', 400));
-  }
 
-  const bookings = await Booking.find({ land: landId }).sort('-createdAt');
-
-  res.status(200).json({
-    status: 'success',
-    results: bookings.length,
-    data: {
-      bookings
+// Get all bookings for a specific land
+  const getBookingsByLand = catchAsync(async (req, res, next) => {
+    const { landId } = req.params;
+    
+    if(!mongoose.Types.ObjectId.isValid(landId)){
+      return next(new AppError('Invalid land ID', 400));
     }
-  });
-});
 
-// Check land availability
+    // Fetch bookings related to the land, newest first
+    const bookings = await Booking.find({ land: landId }).sort('-createdAt');
+
+    // Send response
+    res.status(200).json({
+      status: 'success',
+      results: bookings.length,
+      data: { bookings }
+    });
+  });
+
+
+
+// Check if a land is available for booking
 const checkLandAvailability = catchAsync(async (req, res, next) => {
   const { landId } = req.params;
 
-  if (!mongoose.Types.ObjectId.isValid(landId)) {
-    return next(new AppError('Invalid land ID', 400));
+  if (!landId) {
+    return next(new AppError('Land ID is required', 400));
   }
 
-  const land = await Land.findById(landId);
-  if (!land) {
-    return next(new AppError('Land not found', 404));
-  }
+  // Find active (not expired) booking for the land
+  const activeBooking = await Booking.findOne({
+    land: landId,
+    status: { $in: ['pending', 'confirmed'] },
+    endDate: { $gt: new Date() }
+  });
 
-  const isAvailable = land.status === 'available';
-  const bookingExpiresAt = land.bookingExpiresAt;
+  const isAvailable = !activeBooking;
+
+  const bookingExpiresAt = isAvailable ? null : formatDateTimeInDamascus(activeBooking.endDate);
+  const bookingStatusText = isAvailable ? null : `Reserved until ${bookingExpiresAt}`;
 
   res.status(200).json({
     status: 'success',
     data: {
       isAvailable,
-      status: land.status,
+      status: isAvailable ? 'available' : 'reserved',
       bookingExpiresAt,
-      bookingStatusText: land.bookingStatusText
+      bookingStatusText
     }
   });
 });
 
-// Expire old bookings (cron job function)
-const expireOldBookings = catchAsync(async (req, res, next) => {
-  const expiredBookings = await Booking.find({
-    status: { $in: ['pending', 'confirmed'] },
-    endDate: { $lt: new Date() }
-  });
 
-  for (const booking of expiredBookings) {
-    // Update booking status
-    await Booking.findByIdAndUpdate(booking._id, { status: 'expired' });
-    
-    // Update land status
-    await Land.findByIdAndUpdate(booking.land, {
-      status: 'available',
-      currentBooking: null,
-      bookingExpiresAt: null
-    });
-  }
+// Marks expired bookings based on their end date
+const expireOldBookings = catchAsync(async (req, res, next) => {
+  const result = await updateExpiredBookings();
 
   res.status(200).json({
     status: 'success',
-    message: `Expired ${expiredBookings.length} bookings`,
+    message: `Expired ${result.modifiedCount} bookings`,
     data: {
-      expiredCount: expiredBookings.length
+      expiredCount: result.modifiedCount
     }
   });
 });
+
+
+
 
 module.exports = {
   createBooking,
@@ -275,5 +278,5 @@ module.exports = {
   getUserActiveBooking,
   getBookingsByLand,
   checkLandAvailability,
-  expireOldBookings
+  expireOldBookings,
 };
