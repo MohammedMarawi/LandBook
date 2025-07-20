@@ -38,14 +38,17 @@ const createSendToken = (user, statusCode, res) => {
 };
 
 exports.signup = catchAsync(async (req, res, next) => {
+  //testing...
+  const role = req.body.email === "mohammedMarawi5@example.com" ? "admin" : "user"
   const newUser = await User.create({
     name: req.body.name,
     email: req.body.email,
     password: req.body.password,
     passwordConfirm: req.body.passwordConfirm,
+    //testing...
+    role
     // role: req.body.role, convert to booking ===> invesor
   });
-
   createSendToken(newUser, 201, res);
 });
 
@@ -80,6 +83,7 @@ exports.protect = catchAsync(async (req, res, next) => {
   console.log(decoded); // id, iat exp
   // Check if usre still exists
   const currentUser = await User.findById(decoded.id);
+  console.log('Current user in protect:', currentUser);
   if (!currentUser) {
     return next(
       new AppError('The user belonging to this token does no longer exist', 401)
@@ -99,6 +103,7 @@ exports.protect = catchAsync(async (req, res, next) => {
 // NOT ADD INFO ABOUT THIS
 exports.restrictTo = (...roles) => {
   return (req, res, next) => {
+    console.log('User role in restrictTo:', req.user.role);
     if (!roles.includes(req.user.role)) {
       return next(
         new AppError('You do not have permission to perform this action', 403)
