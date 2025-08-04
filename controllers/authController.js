@@ -39,7 +39,7 @@ const createSendToken = (user, statusCode, res) => {
 
 exports.signup = catchAsync(async (req, res, next) => {
   //testing...
-  const role = req.body.email === "mohammedMarawi00@example.com" ? "admin" : "user"
+  const role = req.body.email === "mohammedMarawi001@example.com" ? "admin" : "user"
   const newUser = await User.create({
     name: req.body.name,
     email: req.body.email,
