@@ -21,12 +21,12 @@ const configureApp = (app) => {
   if (process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'));
   }
-  app.use(
-    cors({
-      origin: 'http://localhost:5500', // Address of the frontend
-      credentials: true, // Allow credentials (cookies, authorization headers, etc.)
-    })
-  );
+app.use(
+  cors({
+    origin: '*',
+  })
+);
+
    const limiter = rateLimit({
     max: 100,
     windowMs: 60 * 60 * 1000,
