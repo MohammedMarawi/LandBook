@@ -11,14 +11,18 @@ const userSchema = new mongoose.Schema(
     },
     email: {
       type: String,
-      required: [true, 'Please provide your email'],
+      required: [true, 'Please provide your email address.'],
       unique: true,
-      lowercase: true,
+      trim: true,
       validate: [validator.isEmail, 'Please provide a valid email'],
+      match: [
+        /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+        'Please provide a valid email address format',
+      ],
     },
     role: {
       type: String,
-      enum: ['landowner', 'admin', 'investor', 'advisor', 'user'],
+      enum: ['landowner', 'admin', 'investor', 'user'],
       default: 'user',
     },
     photo: String,
@@ -49,19 +53,19 @@ const userSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
-userSchema.pre('save', function (next) {
-  if (!this.isModified('password') || this.isNew) return next();
-  this.passwordChangedAt = Date.now() - 1000;
-  next();
-});
+// userSchema.pre('save', function (next) {
+//   if (!this.isModified('password') || this.isNew) return next();
+//   this.passwordChangedAt = Date.now() - 1000;
+//   next();
+// });
 
 
-userSchema.pre('save', async function (next) {
-  if (!this.isModified('password')) return next();
-  this.password = await bcrypt.hash(this.password, 12);
-  this.passwordConfirm = undefined;
-  next();
-});
+// userSchema.pre('save', async function (next) {
+//   if (!this.isModified('password')) return next();
+//   this.password = await bcrypt.hash(this.password, 12);
+//   this.passwordConfirm = undefined;
+//   next();
+// });
 
 
 userSchema.pre(/^find/, function(next) {

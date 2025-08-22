@@ -1,0 +1,112 @@
+[
+  {
+    "_id": "687bde098cc9eef33fbc5f6a",
+    "name": "Abd AlRahman Rahal",
+    "email": "abdalrahman123@gmail.com",
+    "role": "investor",
+    "active": true,
+    "photo": "user-1.jpg",
+    "password": "$2b$12$06Gu1iEAf9C9OrF9hzKeJeZSzuCx.O/n9xocgVZWiBYM24U9Yx0HG"
+  },
+  {
+    "_id": "687bdde28cc9eef33fbc5f67",
+    "name": "Atef Ghayad",
+    "email": "atef123@gmail.com",
+    "role": "investor",
+    "active": true,
+    "photo": "user-2.jpg",
+    "password": "$2b$12$fFYZom1YQ/1oHzJmh1abmOwrISBAXtGsTc0NcNwPeNi2QlPFVWSdS"
+  },
+  {
+    "_id": "687bdd698cc9eef33fbc5f60",
+    "name": "Zakariya Jourieh",
+    "email": "zakariya123@gmail.com",
+    "role": "investor",
+    "active": true,
+    "photo": "user-3.jpg",
+    "password": "$2b$12$pM43AwDRqTzAV3DzjnLsxe1h0NXnajabV6TijqD5JJl/eT4F4DX/W"
+  },
+  {
+    "_id": "687bdd348cc9eef33fbc5f5d",
+    "name": "Mohammed Jarjoumi",
+    "email": "mohammedjar@gmail.com",
+    "role": "investor",
+    "active": true,
+    "photo": "user-4.jpg",
+    "password": "$2b$12$XOc46bRnzKLTo3pdIVjtQee2m0ynzq2QkeUtLJ/dk0IUmUGJaELSS"
+  },
+  {
+    "_id": "687bdcf58cc9eef33fbc5f58",
+    "name": "Manhal Sarhan",
+    "email": "manhal@gmail.com",
+    "role": "investor",
+    "active": true,
+    "photo": "user-5.jpg",
+    "password": "$2b$12$8q50OJkIxjy85fQPtZLB8e6/S9Z3DPm//uXp3tef4rxWS4OUTAPAi"
+  },
+  {
+    "_id": "687bdcdb8cc9eef33fbc5f55",
+    "name": "Taha Alhalak",
+    "email": "taha@gmail.com",
+    "role": "investor",
+    "active": true,
+    "photo": "user-6.jpg",
+    "password": "$2b$12$7isVCofUw3YfbC849QjEo.buctJlsY8CSzoxQvRz6HYJJ7kX.84eC"
+  },
+  {
+    "_id": "687bdcc08cc9eef33fbc5f52",
+    "name": "Abd AlGhani Habra",
+    "email": "abdalghani@gmail.com",
+    "role": "investor",
+    "active": true,
+    "photo": "user-7.jpg",
+    "password": "$2b$12$LSkXhuI/y/jz1OG.fm.o/eb7GKahmB5AAQ0.B3t2O7UYNEReXslG."
+  },
+  {
+    "_id": "687bdc8d8cc9eef33fbc5f4e",
+    "name": "Rayyan Natoura",
+    "email": "rayyan@gmail.com",
+    "role": "investor",
+    "active": true,
+    "photo": "user-8.jpg",
+
+    "password": "$2b$12$5gOKMv.Fd5NSEW.0WbtoX.d975EpLkWeIp5ENJpJlqEqBY4nwj3wO"
+  },
+  {
+    "_id": "687bdc6b8cc9eef33fbc5f4b",
+    "name": "Mohammed Maarawi",
+    "email": "mohammed@gmail.com",
+    "role": "investor",
+    "active": true,
+    "photo": "user-9.jpg",
+
+    "password": "$2b$12$H5A1FlaeeVItF0./2gU3A.7LvyJly8RrGlk4DK26hnpoMbTqNaeZy"
+  },
+  {
+    "_id": "687bdc528cc9eef33fbc5f48",
+    "name": "Nour Alsabaa",
+    "email": "nour@gmail.com",
+    "role": "investor",
+    "active": true,
+    "photo": "user-10.jpg",
+    "password": "$2b$12$4qub5fCqm2l3RsRXeKkKi.iradBTB3sKFYWy.kYVC80MzKCLvo9u2"
+  },
+  {
+    "_id": "687bdc348cc9eef33fbc5f45",
+    "name": "Aya Attar",
+    "email": "aya@gmail.com",
+    "role": "investor",
+    "active": true,
+    "photo": "user-11.jpg",
+    "password": "$2b$12$dhLYPP/mpeEtKZ7N7tl7ye6gneq7Ksk8PguD8pvGpscbCH4rP0.WG"
+  },
+  {
+    "_id": "687bdc108cc9eef33fbc5f42",
+    "name": "Natheer Ayyan",
+    "email": "natheer@gmail.com",
+    "role": "admin",
+    "active": true,
+    "photo": "user-12.jpg",
+    "password": "$2b$12$sN1Zz0gCXkXUd55Xp0NfaO9IvBTn8qOKaSTXDwtTgHbLYC6vcZJle"
+  }
+]

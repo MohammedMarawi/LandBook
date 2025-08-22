@@ -1,11 +1,19 @@
 const Review = require('../models/reviewsModel');
 const AppError = require('../utils/appError');
 const catchAsync = require('../utils/catchAsync');
+const APIFeatures = require('../utils/apiFeatures');
 exports.getAllReviews = catchAsync(async (req, res, next) => {
   // Allow nested routes
   let filter = {};
   if (req.params.landId) filter = { land: req.params.landId };
-  const reviews = await Review.find(filter);
+  const features = new APIFeatures(Review.find(filter), req.query)
+    .filter() 
+    .sort() 
+    .limitFields() 
+    .paginate() 
+  const reviews = await features.query;
+  // SEND RESPONSSE
+  // console.log (lands.length)
   res.status(200).json({
     status: 'success',
     results: reviews.length,

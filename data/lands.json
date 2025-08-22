@@ -1,498 +1,433 @@
 [
   {
-    "title": "Sun Valley Orchard - Homs ",
-    "price": 50000,
-    "area": 100,
-    "location": {
-      "city": "Al-Rastan",
-      "governorate": "Homs",
-      "coordinates": {
-        "type": "Point",
-        "coordinates": [36.7106, 34.8496]
-      },
-      "address": "Countryside of Homs"
+    "firstName": "Aya",
+    "lastName": "Attar",
+    "gender": "female",
+    "email": "aya.attar@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "998877665"
     },
-    "climate": "Mediterranean",
-    "averageRainfall": 668,
-    "temperatureRange": {
-      "min": 5,
-      "max": 40
-    },
-    "suitableFor": ["Pistachios", "Figs"],
-    "currentCrops": [
-      "Pistachios trees",
-      "Figs trees",
-      "Cucumbers trees",
-      "Dates trees",
-      "Grapes trees"
-    ],
-    "features": {
-      "waterSource": ["Well", "River", "Spring"],
-      "soilType": ["Clay", "Sandy"]
-    },
-    "treeAge": 14,
-    "description": "This land is well-suited for growing a wide range of crops. It offers excellent soil and reliable water supply.",
-    "investmentOpportunities": [
-      {
-        "type": "Partial investment",
-        "minInvestment": 5000,
-        "expectedReturn": 15,
-        "returnPeriod": "Annual"
-      }
-    ],
-    "images": [
-      "farm1.jpg",
-      "farm2.jpg",
-      "farm3.jpg",
-      "farm4.jpg",
-      "farm5.jpg",
-      "farm6.jpg",
-      "farm7.jpg"
-    ],
-    "isApproved": true,
-    "createdAt": "2025-07-15T00:00:00Z"
-  },
-  {
-    "title": "Golden Horizon Estate – Aleppo",
-    "price": 100000,
-    "area": 200,
-    "location": {
-      "city": "Azaz",
-      "governorate": "Aleppo",
-      "coordinates": {
-        "type": "Point",
-        "coordinates": [37.05, 36.585]
-      },
-      "address": "South Aleppo Farmlands - near Saraqib Road"
-    },
-    "climate": "Semi-arid",
-    "averageRainfall": 550,
-    "temperatureRange": {
-      "min": 4,
-      "max": 38
-    },
-    "suitableFor": ["Olives", "Grapes"],
-    "currentCrops": [
-      "Olive trees",
-      "Grapes trees",
-      "Cucumbers trees",
-      "Dates trees"
-    ],
-    "features": {
-      "waterSource": ["River", "Rain-fed", "Irrigation system"],
-      "soilType": ["Clay", "Loamy"]
-    },
-    "treeAge": 4,
-    "description": "Located in a fertile area, this property provides optimal conditions for agricultural production.",
-    "investmentOpportunities": [
-      {
-        "type": "Full ownership",
-        "minInvestment": 3000,
-        "expectedReturn": 20,
-        "returnPeriod": "Seasonal"
-      }
-    ],
-    "images": [
-      "farm2.jpg",
-      "farm3.jpg",
-      "farm4.jpg",
-      "farm5.jpg",
-      "farm6.jpg",
-      "farm7.jpg",
-      "farm8.jpg"
-    ],
-    "isApproved": true,
-    "createdAt": "2025-07-15T00:00:00Z"
-  },
-  {
-    "title": "Emerald Fields – Damascus",
-    "price": 150000,
-    "area": 300,
-    "location": {
-      "city": "Ghouta",
-      "governorate": "Damascus",
-      "coordinates": {
-        "type": "Point",
-        "coordinates": [36.4579, 33.5606]
-      },
-      "address": "East Damascus Valley - near Al-Qalamoun Hills"
-    },
-    "climate": "Arid",
-    "averageRainfall": 484,
-    "temperatureRange": {
-      "min": 3,
-      "max": 37
-    },
-    "suitableFor": ["Tomatoes", "Cucumbers"],
-    "currentCrops": ["Tomatoes trees", "Cucumbers trees", "Olive trees"],
-    "features": {
-      "waterSource": ["Well", "Spring", "Irrigation system"],
-      "soilType": ["Silty", "Peaty", "Chalky"]
-    },
-    "treeAge": 20,
-    "description": "A highly productive farm with water access and fertile land, suitable for long-term investment.",
-    "investmentOpportunities": [
-      {
-        "type": "Partnership",
-        "minInvestment": 4000,
-        "expectedReturn": 25,
-        "returnPeriod": "Seasonal"
-      }
-    ],
-    "images": [
-      "farm3.jpg",
-      "farm4.jpg",
-      "farm5.jpg",
-      "farm6.jpg",
-      "farm7.jpg",
-      "farm8.jpg",
-      "farm9.jpg"
-    ],
-    "isApproved": true,
-    "createdAt": "2025-07-15T00:00:00Z"
-  },
-  {
-    "title": "Valley Breeze Land – Latakia",
-    "price": 200000,
-    "area": 400,
-    "location": {
-      "city": "Jableh",
-      "governorate": "Latakia",
-      "coordinates": {
-        "type": "Point",
-        "coordinates": [35.8492, 35.35]
-      },
-      "address": "North Latakia Plains - close to Al-Haffah Forest"
-    },
-    "climate": "Coastal",
-    "averageRainfall": 787,
-    "temperatureRange": {
-      "min": 1,
-      "max": 42
-    },
-    "suitableFor": ["Wheat", "Barley"],
-    "currentCrops": [
-      "Wheat trees",
-      "Barley trees",
-      "Potatoes trees",
-      "Rosemary trees"
-    ],
-    "features": {
-      "waterSource": ["Rain-fed", "Irrigation system", "Well"],
-      "soilType": ["Clay", "Peaty", "Loamy"]
-    },
-    "treeAge": 15,
-    "description": "The land is ideal for cultivating vegetables and trees, with existing irrigation systems in place.",
-    "investmentOpportunities": [
-      {
-        "type": "Leasing",
-        "minInvestment": 7000,
-        "expectedReturn": 30,
-        "returnPeriod": "Seasonal"
-      }
-    ],
-    "images": [
-      "farm4.jpg",
-      "farm5.jpg",
-      "farm6.jpg",
-      "farm7.jpg",
-      "farm8.jpg",
-      "farm9.jpg",
-      "farm10.jpg"
-    ],
-    "isApproved": true,
-    "createdAt": "2025-07-15T00:00:00Z"
-  },
-  {
-    "title": "Olive Sun Plains – Hama",
-    "price": 250000,
+    "city": "Aleppo",
+    "userPhoto": "https://example.com/photos/aya.jpg",
+    "idPhoto": "https://example.com/id/aya.jpg",
+    "ownershipPhoto": "https://example.com/ownership/aya_land.jpg",
+    "title": "Fertile Green Fields of Aleppo",
     "area": 500,
+    "price": 15000,
+    "ratingsAverage": 4.9,
+    "ratingsQuantity": 2,
+    "description": "A lush olive farm with rich soil and excellent irrigation, perfect for long-term investment.",
+    "currentCrop": ["Olive", "Wheat"],
+    "treeAge": 10,
+    "workersNumber": 3,
+    "equipments": ["Tractor", "Sprayer", "Harvester"],
+    "waterSource": ["Well", "Rainwater"],
+    "averageRainfall": 400,
+    "irrigationMethods": ["Drip", "Sprinkler"],
+    "soilTypes": ["Loamy", "Clay"],
+    "suitableCrops": ["Olives", "Wheat", "Barley"],
+    "climateDescription": "Mediterranean climate with mild wet winters and hot dry summers.",
+    "estimatedReturns": "12000 USD per season",
+    "contractDuration": "5 Months",
     "location": {
-      "city": "Salamiyah",
-      "governorate": "Hama",
-      "coordinates": {
-        "type": "Point",
-        "coordinates": [37.0729, 35.0119]
-      },
-      "address": "West Hama Fields - by the Orontes River"
+      "coordinates": [37.1591, 36.2021],
+      "address": "Aleppo Countryside, Near Azaz",
+      "village": "Azaz"
     },
-    "climate": "Mountainous",
-    "averageRainfall": 391,
-    "temperatureRange": {
-      "min": 1,
-      "max": 35
-    },
-    "suitableFor": ["Cotton", "Citrus"],
-    "currentCrops": [
-      "Corn trees",
-      "Cotton trees",
-      "Cucumbers trees",
-      "Dates trees"
+    "landMedia": [
+      "https://example.com/lands/aleppo1.jpg",
+      "https://example.com/videos/aleppo-land.mp4"
     ],
-    "features": {
-      "waterSource": ["Rainwater", "Rain-fed", "River"],
-      "soilType": ["Peaty", "Loamy", "Sandy"]
-    },
-    "treeAge": 25,
-    "description": "It is an attractive investment opportunity with potential for expansion in farming and agribusiness.",
-    "investmentOpportunities": [
-      {
-        "type": "Mortgage",
-        "minInvestment": 6000,
-        "expectedReturn": 10,
-        "returnPeriod": "Annual"
-      }
-    ],
-    "images": [
-      "farm5.jpg",
-      "farm6.jpg",
-      "farm7.jpg",
-      "farm8.jpg",
-      "farm9.jpg",
-      "farm10.jpg",
-      "farm11.jpg"
-    ],
-    "isApproved": true,
-    "createdAt": "2025-07-15T00:00:00Z"
+    "isApproved": "approved",
+    "status": "reserved"
   },
   {
-    "title": "Fig Orchard in Daraa – Rich Soil and Rainwater Supply",
-    "price": 300000,
-    "area": 600,
-    "location": {
-      "city": "Houran",
-      "governorate": "Daraa",
-      "coordinates": {
-        "type": "Point",
-        "coordinates": [36.1022, 32.6097]
-      },
-      "address": "Green Belt of Daraa - near Jordanian Border"
+    "firstName": "Nour",
+    "lastName": "Alsabaa",
+    "gender": "female",
+    "email": "Nour.Alsabaa@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "995544332"
     },
-    "climate": "Semi-arid",
-    "averageRainfall": 707,
-    "temperatureRange": {
-      "min": 2,
-      "max": 38
-    },
-    "suitableFor": ["Fruits", "Dates"],
-    "currentCrops": [
-      "Cotton trees",
-      "Figs trees",
-      "Thyme trees",
-      "Grapes trees"
-    ],
-    "features": {
-      "waterSource": ["Spring", "Rain-fed", "River"],
-      "soilType": ["Chalky", "Sandy", "Silty"]
-    },
-    "treeAge": 30,
-    "description": "Surrounded by a natural landscape, this land offers a tranquil farming environment with high returns.",
-    "investmentOpportunities": [
-      {
-        "type": "Partial investment",
-        "minInvestment": 2000,
-        "expectedReturn": 10,
-        "returnPeriod": "Annual"
-      }
-    ],
-    "images": [
-      "farm6.jpg",
-      "farm7.jpg",
-      "farm8.jpg",
-      "farm9.jpg",
-      "farm10.jpg",
-      "farm11.jpg",
-      "farm12.jpg"
-    ],
-    "isApproved": false,
-    "createdAt": "2025-07-15T00:00:00Z"
-  },
-  {
-    "title": "Barley Farming Land in Idlib – High Yield Potential",
-    "price": 350000,
-    "area": 700,
-    "location": {
-      "city": "Sarmada",
-      "governorate": "Idlib",
-      "coordinates": {
-        "type": "Point",
-        "coordinates": [36.6744, 36.1411]
-      },
-      "address": "Rural Idlib Meadows - close to Ariha district"
-    },
-    "climate": "Mediterranean",
-    "averageRainfall": 502,
-    "temperatureRange": {
-      "min": 0,
-      "max": 36
-    },
-    "suitableFor": ["Vegetables", "Fruits"],
-    "currentCrops": ["Barley trees", "Corn trees", "Cucumbers trees"],
-    "features": {
-      "waterSource": "Spring",
-      "soilType": ["Loamy", "Sandy", "Clay", "Chalky"]
-    },
-    "treeAge": 35,
-    "description": "This land is located near major roads, making it accessible for logistics and product distribution.",
-    "investmentOpportunities": [
-      {
-        "type": "Full ownership",
-        "minInvestment": 7000,
-        "expectedReturn": 15,
-        "returnPeriod": "Seasonal"
-      }
-    ],
-    "images": [
-      "farm7.jpg",
-      "farm8.jpg",
-      "farm9.jpg",
-      "farm10.jpg",
-      "farm11.jpg",
-      "farm12.jpg",
-      "farm13.jpg"
-    ],
-    "isApproved": true,
-    "createdAt": "2025-07-15T00:00:00Z"
-  },
-  {
-    "title": "Cucumber Greenhouse Land in Raqqa – Accessible and Ready",
-    "price": 400000,
-    "area": 800,
-    "location": {
-      "city": "Al-Mansurah",
-      "governorate": "Raqqa",
-      "coordinates": {
-        "type": "Point",
-        "coordinates": [39.016, 35.9467]
-      },
-      "address": "East Raqqa Basin - near Balikh River Route"
-    },
-    "climate": "Arid",
-    "averageRainfall": 397,
-    "temperatureRange": {
-      "min": 0,
-      "max": 25
-    },
-    "suitableFor": ["Olives", "Tomatoes"],
-    "currentCrops": ["Rosemary trees", "Thyme trees"],
-    "features": {
-      "waterSource": ["Well", "Rainwater", "Irrigation system"],
-      "soilType": ["Sandy", "Clay", "Silty"]
-    },
-    "treeAge": 40,
-    "description": "The land features an excellent combination of climate and soil, ensuring consistent crop yields.",
-    "investmentOpportunities": [
-      {
-        "type": "Partnership",
-        "minInvestment": 8000,
-        "expectedReturn": 45,
-        "returnPeriod": "Annual"
-      }
-    ],
-    "images": [
-      "farm8.jpg",
-      "farm9.jpg",
-      "farm10.jpg",
-      "farm11.jpg",
-      "farm12.jpg",
-      "farm13.jpg",
-      "farm14.jpg"
-    ],
-    "isApproved": true,
-    "createdAt": "2025-07-15T00:00:00Z"
-  },
-  {
-    "title": "Grape Vineyard in Tartus – Excellent Investment Opportunity",
-    "price": 450000,
-    "area": 900,
-    "location": {
-      "city": "Safita",
-      "governorate": "Tartus",
-      "coordinates": {
-        "type": "Point",
-        "coordinates": [36.1111, 34.8953]
-      },
-      "address": "South Tartus Groves - by the Coastal Highway"
-    },
-    "climate": "Mediterranean",
-    "averageRainfall": 360,
-    "temperatureRange": {
-      "min": 0,
-      "max": 20
-    },
-    "suitableFor": ["Cotton", "Grapes"],
-    "currentCrops": ["Thyme trees", "Rosemary trees", "Dates trees"],
-    "features": {
-      "waterSource": ["River", "Rainwater", "Irrigation system", "Rain-fed"],
-      "soilType": ["Clay", "Loamy", "Silty"]
-    },
-    "treeAge": 55,
-    "description": "Ideal for eco-agriculture or organic farming, supported by natural water resources.",
-    "investmentOpportunities": [
-      {
-        "type": "Leasing",
-        "minInvestment": 9000,
-        "expectedReturn": 50,
-        "returnPeriod": "Seasonal"
-      }
-    ],
-    "images": [
-      "farm9.jpg",
-      "farm10.jpg",
-      "farm11.jpg",
-      "farm12.jpg",
-      "farm13.jpg",
-      "farm14.jpg",
-      "farm15.jpg"
-    ],
-    "isApproved": false,
-    "createdAt": "2025-07-15T00:00:00Z"
-  },
-  {
-    "title": "Large Wheat Farm in Deir ez-Zor with Irrigation Access",
-    "price": 500000,
+    "city": "Homs",
+    "userPhoto": "https://example.com/photos/nour.jpg",
+    "idPhoto": "https://example.com/id/nour.jpg",
+    "ownershipPhoto": "https://example.com/ownership/nour_land.jpg",
+    "title": "Sunny Orchards of Homs",
     "area": 1000,
+    "price": 20000,
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 2,
+    "description": "Extensive wheat farmland ready for seasonal investment with great accessibility.",
+    "currentCrop": ["Apple", "Peach"],
+    "treeAge": 20,
+    "workersNumber": 4,
+    "equipments": ["Tractor", "Irrigation Pump", "Pruner"],
+    "waterSource": ["River", "Well"],
+    "averageRainfall": 350,
+    "irrigationMethods": ["Flood", "Drip"],
+    "soilTypes": ["Sandy Loam"],
+    "suitableCrops": ["Apples", "Peaches", "Grapes"],
+    "climateDescription": "Temperate climate with adequate rainfall throughout the year.",
+    "estimatedReturns": "20000 USD per season",
+    "contractDuration": "3 Months",
     "location": {
-      "city": "Al-Busayrah",
-      "governorate": "Deir ez-Zor",
-      "coordinates": {
-        "type": "Point",
-        "coordinates": [40.897, 35.833]
-      },
-      "address": "Western Deir ez-Zor Lands - near Euphrates Bend"
+      "coordinates": [36.7111, 34.7266],
+      "address": "Homs Countryside, Near Talkalakh",
+      "village": "Talkalakh"
     },
-    "climate": "Mountainous",
-    "averageRainfall": 467,
-    "temperatureRange": {
-      "min": 4,
-      "max": 28
+    "landMedia": [
+      "https://example.com/lands/homs1.jpg",
+      "https://example.com/videos/homs-land.mp4"
+    ],
+    "isApproved": "approved",
+    "status": "reserved"
+  },
+  {
+    "firstName": "Rayyan",
+    "lastName": "Nattoura",
+    "gender": "female",
+    "email": "rayyan.nattoura@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "991122334"
     },
-    "suitableFor": ["Pistachios", "Citrus"],
-    "currentCrops": ["Potatoes trees", "Pistachios trees", "Grapes trees"],
-    "features": {
-      "waterSource": ["Spring", "Well", "River"],
-      "soilType": ["Chalky", "Sandy", "Silty"]
+    "city": "Idlib",
+    "userPhoto": "https://example.com/photos/rayyan.jpg",
+    "idPhoto": "https://example.com/id/rayyan.jpg",
+    "ownershipPhoto": "https://example.com/ownership/rayyan_land.jpg",
+    "title": "Fertile Hills of Idlib",
+    "area": 1500,
+    "price": 25000,
+    "ratingsAverage": 4.6,
+    "ratingsQuantity": 2,
+    "description": "Beautiful grape farm with high export potential and modern irrigation system.",
+    "currentCrop": ["Tomato", "Cucumber"],
+    "treeAge": 30,
+    "workersNumber": 9,
+    "equipments": ["Sprayer", "Harvester"],
+    "waterSource": ["Well"],
+    "averageRainfall": 320,
+    "irrigationMethods": ["Drip"],
+    "soilTypes": ["Loamy"],
+    "suitableCrops": ["Tomatoes", "Cucumbers", "Peppers"],
+    "climateDescription": "Mediterranean climate with moderate rainfall.",
+    "estimatedReturns": "18000 USD per season",
+    "contractDuration": "4 Months",
+    "location": {
+      "coordinates": [36.6443, 35.7159],
+      "address": "Idlib Countryside, Near Maaret Tamsrin",
+      "village": "Maaret Tamsrin"
     },
+    "landMedia": [
+      "https://example.com/lands/idlib1.jpg",
+      "https://example.com/videos/idlib-land.mp4"
+    ],
+    "isApproved": "approved",
+    "status": "reserved"
+  },
+  {
+    "firstName": "Mohammed",
+    "lastName": "Maarawi",
+    "gender": "male",
+    "email": "Mohammed.Maarawi@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "990011223"
+    },
+    "city": "Raqqa",
+    "userPhoto": "https://example.com/photos/mohammed.jpg",
+    "idPhoto": "https://example.com/id/mohammed.jpg",
+    "ownershipPhoto": "https://example.com/ownership/mohammed_land.jpg",
+    "title": "Golden Plains of Raqqa",
+    "area": 2000,
+    "price": 30000,
+    "ratingsAverage": 4.9,
+    "ratingsQuantity": 2,
+    "description": "Ideal for grain farming with rich soil and water availability.",
+    "currentCrop": ["Wheat", "Barley"],
+    "treeAge": 25,
+    "workersNumber": 9,
+    "equipments": ["Tractor", "Combine Harvester"],
+    "waterSource": ["River"],
+    "averageRainfall": 280,
+    "irrigationMethods": ["Flood"],
+    "soilTypes": ["Clay"],
+    "suitableCrops": ["Wheat", "Barley", "Corn"],
+    "climateDescription": "Semi-arid climate with hot summers and mild winters.",
+    "estimatedReturns": "22000 USD per season",
+    "contractDuration": "6 Months",
+    "location": {
+      "coordinates": [39.0123, 35.95],
+      "address": "Raqqa Countryside, Near Tell Abyad",
+      "village": "Tell Abyad"
+    },
+    "landMedia": [
+      "https://example.com/lands/raqqa1.jpg",
+      "https://example.com/videos/raqqa-land.mp4"
+    ],
+    "isApproved": "approved",
+    "status": "reserved"
+  },
+  {
+    "firstName": "Mohammed",
+    "lastName": "Jarjoumi",
+    "gender": "male",
+    "email": "Mohammed.Jarjoumi@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "997755331"
+    },
+    "city": "Daraa",
+    "userPhoto": "https://example.com/photos/mohammedJar.jpg",
+    "idPhoto": "https://example.com/id/mohammedJar.jpg",
+    "ownershipPhoto": "https://example.com/ownership/mohammedJar_land.jpg",
+    "title": "Fertile Farms of Daraa",
+    "area": 2500,
+    "price": 35000,
+    "ratingsAverage": 4.5,
+    "ratingsQuantity": 2,
+    "description": "Rich agricultural land with advanced irrigation systems.",
+    "currentCrop": ["Tomato", "Potato"],
+    "treeAge": 35,
+    "workersNumber": 6,
+    "equipments": ["Tractor", "Plough", "Irrigation System"],
+    "waterSource": ["Well", "River"],
+    "averageRainfall": 370,
+    "irrigationMethods": ["Drip", "Flood"],
+    "soilTypes": ["Sandy", "Loamy"],
+    "suitableCrops": ["Tomatoes", "Potatoes", "Onions"],
+    "climateDescription": "Mediterranean climate with wet winters and dry summers.",
+    "estimatedReturns": "25000 USD per season",
+    "contractDuration": "2 Months",
+    "location": {
+      "coordinates": [36.1044, 32.6189],
+      "address": "Daraa Countryside, Near Bosra",
+      "village": "Bosra"
+    },
+    "landMedia": [
+      "https://example.com/lands/daraa1.jpg",
+      "https://example.com/videos/daraa-land.mp4"
+    ],
+    "isApproved": "approved",
+    "status": "reserved"
+  },
+  {
+    "firstName": "Natheer",
+    "lastName": "Ayyan",
+    "gender": "male",
+    "email": "Natheer.Ayyan@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "994433221"
+    },
+    "city": "Hama",
+    "userPhoto": "https://example.com/photos/natheer.jpg",
+    "idPhoto": "https://example.com/id/natheer.jpg",
+    "ownershipPhoto": "https://example.com/ownership/natheer_land.jpg",
+    "title": "Green Valleys of Hama",
+    "area": 3000,
+    "price": 40000,
+    "ratingsAverage": 5,
+    "ratingsQuantity": 2,
+    "description": "Perfect land for diverse crops with consistent rainfall.",
+    "currentCrop": ["Corn", "Soybean"],
+    "treeAge": 40,
+    "workersNumber": 20,
+    "equipments": ["Tractor", "Seeder", "Harvester"],
+    "waterSource": ["Rainwater", "Well"],
+    "averageRainfall": 450,
+    "irrigationMethods": ["Sprinkler"],
+    "soilTypes": ["Loamy", "Clay"],
+    "suitableCrops": ["Corn", "Soybean", "Wheat"],
+    "climateDescription": "Mild Mediterranean climate with steady rainfall.",
+    "estimatedReturns": "30000 USD per season",
+    "contractDuration": "7 Months",
+    "location": {
+      "coordinates": [35.1318, 36.7578],
+      "address": "Hama Countryside, Near Masyaf",
+      "village": "Masyaf"
+    },
+    "landMedia": [
+      "https://example.com/lands/hama1.jpg",
+      "https://example.com/videos/hama-land.mp4"
+    ],
+    "isApproved": "approved",
+    "status": "reserved"
+  },
+  {
+    "firstName": "Abd AlGhani",
+    "lastName": "Habrah",
+    "gender": "male",
+    "email": "Abd_AlGhani.Habrah@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "993322110"
+    },
+    "city": "Tartus",
+    "userPhoto": "https://example.com/photos/abd_alGhani.jpg",
+    "idPhoto": "https://example.com/id/abd_alGhani.jpg",
+    "ownershipPhoto": "https://example.com/ownership/abd_alGhani_land.jpg",
+    "title": "Coastal Farmlands of Tartus",
+    "area": 3500,
+    "price": 45000,
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 2,
+    "description": "Fertile lands near the coast with excellent climate.",
+    "currentCrop": ["Olive", "Fig"],
+    "treeAge": 45,
+    "workersNumber": 15,
+    "equipments": ["Tractor", "Sprayer"],
+    "waterSource": ["Well", "Rainwater"],
+    "averageRainfall": 500,
+    "irrigationMethods": ["Drip"],
+    "soilTypes": ["Clay Loam"],
+    "suitableCrops": ["Olives", "Figs", "Grapes"],
+    "climateDescription": "Mediterranean climate with wet winters and dry summers.",
+    "estimatedReturns": "28000 USD per season",
+    "contractDuration": "8 Months",
+    "location": {
+      "coordinates": [34.8875, 35.8833],
+      "address": "Tartus Countryside, Near Baniyas",
+      "village": "Baniyas"
+    },
+    "landMedia": [
+      "https://example.com/lands/tartus1.jpg",
+      "https://example.com/videos/tartus1-land.mp4"
+    ],
+
+    "isApproved": "approved",
+    "status": "reserved"
+  },
+  {
+    "firstName": "Manhal",
+    "lastName": "Sarhan",
+    "gender": "male",
+    "email": "Manhal.Sarhan@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "996677889"
+    },
+    "city": "Latakia",
+    "userPhoto": "https://example.com/photos/manhal.jpg",
+    "idPhoto": "https://example.com/id/manhal.jpg",
+    "ownershipPhoto": "https://example.com/ownership/manhal_land.jpg",
+    "title": "Lush Terraces of Latakia",
+    "area": 4000,
+    "price": 50000,
+    "ratingsAverage": 5,
+    "ratingsQuantity": 2,
+    "description": "Terraced fields ideal for diverse crop cultivation.",
+    "currentCrop": ["Tea", "Tobacco"],
+    "treeAge": 50,
+    "workersNumber": 25,
+    "equipments": ["Harvester", "Irrigation Pump"],
+    "waterSource": ["Rainwater"],
+    "averageRainfall": 550,
+    "irrigationMethods": ["Sprinkler", "Drip"],
+    "soilTypes": ["Silty Loam"],
+    "suitableCrops": ["Tea", "Tobacco", "Citrus"],
+    "climateDescription": "Humid Mediterranean climate with high rainfall.",
+    "estimatedReturns": "35000 USD per season",
+    "contractDuration": "10 Months",
+    "location": {
+      "coordinates": [35.5233, 35.7917],
+      "address": "Latakia Countryside, Near Jableh",
+      "village": "Jableh"
+    },
+    "landMedia": [
+      "https://example.com/lands/latakia1.jpg",
+      "https://example.com/videos/latakia-land.mp4"
+    ],
+    "isApproved": "approved",
+    "status": "reserved"
+  },
+  {
+    "firstName": "Atef",
+    "lastName": "Ghayad",
+    "gender": "male",
+    "email": "Atef.Ghayad@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "994455667"
+    },
+    "city": "Deir ez-Zor",
+    "userPhoto": "https://example.com/photos/atef.jpg",
+    "idPhoto": "https://example.com/id/atef.jpg",
+    "ownershipPhoto": "https://example.com/ownership/atef_land.jpg",
+    "title": "Fertile Riverbanks of Deir ez-Zor",
+    "area": 4500,
+    "price": 55000,
+    "ratingsAverage": 5,
+    "ratingsQuantity": 2,
+    "description": "Land along Euphrates River suitable for various crops.",
+    "currentCrop": ["Cotton", "Barley"],
+    "treeAge": 28,
+    "workersNumber": 5,
+    "equipments": ["Plough", "Irrigation System"],
+    "waterSource": ["River"],
+    "averageRainfall": 300,
+    "irrigationMethods": ["Flood", "Drip"],
+    "soilTypes": ["Loamy"],
+    "suitableCrops": ["Cotton", "Barley", "Wheat"],
+    "climateDescription": "Semi-arid climate with hot summers.",
+    "estimatedReturns": "27000 USD per season",
+    "contractDuration": "12 Months",
+    "location": {
+      "coordinates": [40.1603, 35.855],
+      "address": "Deir ez-Zor Countryside, Near Al Mayadin",
+      "village": "Al Mayadin"
+    },
+    "landMedia": [
+      "https://example.com/lands/deir1.jpg",
+      "https://example.com/videos/deir-land.mp4"
+    ],
+    "isApproved": "approved",
+    "status": "reserved"
+  },
+  {
+    "firstName": "Zakariya",
+    "lastName": "Jourieh",
+    "gender": "male",
+    "email": "Zakariya.Jourieh@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "993311223"
+    },
+    "city": "Damascus",
+    "userPhoto": "https://example.com/photos/zakariya.jpg",
+    "idPhoto": "https://example.com/id/zakariya.jpg",
+    "ownershipPhoto": "https://example.com/ownership/zakariya_land.jpg",
+    "title": "Damascus Valley Orchards",
+    "area": 5000,
+    "price": 60000,
+    "ratingsAverage": 5,
+    "ratingsQuantity": 2,
+    "description": "Ideal for grain and vegetable farming with modern facilities.",
+    "currentCrop": ["Corn", "Potato"],
     "treeAge": 60,
-    "description": "A perfect investment for those looking to enter the agriculture sector with ready-to-use land.",
-    "investmentOpportunities": [
-      {
-        "type": "Sale",
-        "minInvestment": 10000,
-        "expectedReturn": 55,
-        "returnPeriod": "Annual"
-      }
+    "workersNumber": 30,
+    "equipments": ["Tractor", "Seeder", "Harvester"],
+    "waterSource": ["Well"],
+    "averageRainfall": 400,
+    "irrigationMethods": ["Drip"],
+    "soilTypes": ["Silty Loam"],
+    "suitableCrops": ["Corn", "Potato", "Wheat"],
+    "climateDescription": "Continental climate with cold winters and warm summers.",
+    "estimatedReturns": "33000 USD per season",
+    "contractDuration": "13 Months",
+    "location": {
+      "coordinates": [36.2931, 33.5138],
+      "address": "Damascus Suburb",
+      "village": "Al-Qadam"
+    },
+    "landMedia": [
+      "https://example.com/lands/damascus1.jpg",
+      "https://example.com/videos/damascus-land.mp4"
     ],
-    "images": [
-      "farm10.jpg",
-      "farm11.jpg",
-      "farm12.jpg",
-      "farm13.jpg",
-      "farm14.jpg",
-      "farm15.jpg",
-      "farm16.jpg"
-    ],
-    "isApproved": true,
-    "createdAt": "2025-07-15T00:00:00Z"
+    "isApproved": "approved",
+    "status": "reserved"
   }
 ]

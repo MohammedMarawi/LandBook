@@ -1,0 +1,131 @@
+[
+  {
+    "review": "Azaz's fertile lands near Aleppo are perfect for olive and wheat farming, combining tradition with logistics potential near Turkey.",
+    "rating": 5,
+    "user": "687bde098cc9eef33fbc5f6a",
+    "land": "687fe3ef5eb595210e399d15"
+  },
+  {
+    "review": "The proximity to Azaz’s trade routes makes this land highly suitable for export-oriented agriculture.",
+    "rating": 4.9,
+    "user": "687bdde28cc9eef33fbc5f67",
+    "land": "687fe3ef5eb595210e399d15"
+  },
+
+  {
+    "review": "Talkalakh in Homs boasts moderate climate and rich soil, ideal for vegetables and grains.",
+    "rating": 5,
+    "user": "687bde098cc9eef33fbc5f6a",
+    "land": "687fe3ef5eb595210e399d18"
+  },
+  {
+    "review": "This land offers a great opportunity for irrigation-based farming with excellent productivity near Talkalakh.",
+    "rating": 4.8,
+    "user": "687bdde28cc9eef33fbc5f67",
+    "land": "687fe3ef5eb595210e399d18"
+  },
+
+  {
+    "review": "Maaret Tamsrin’s lands are known for pistachios and olives — a smart investment in Idlib countryside.",
+    "rating": 5,
+    "user": "687bdd698cc9eef33fbc5f60",
+    "land": "687fe3ef5eb595210e399d19"
+  },
+  {
+    "review": "Traditional farming expertise and favorable soil conditions make Idlib’s farms near Maaret Tamsrin reliable for agriculture.",
+    "rating": 4.9,
+    "user": "687bdd348cc9eef33fbc5f5d",
+    "land": "687fe3ef5eb595210e399d19"
+  },
+
+  {
+    "review": "Tell Abyad offers excellent potential for irrigated farming and seasonal crops thanks to its Euphrates access.",
+    "rating": 5,
+    "user": "687bdd698cc9eef33fbc5f60",
+    "land": "687fe3ef5eb595210e399d1a"
+  },
+  {
+    "review": "Raqqa’s countryside near Tell Abyad is reviving rapidly, providing fertile and affordable farmland.",
+    "rating": 4.8,
+    "user": "687bdd348cc9eef33fbc5f5d",
+    "land": "687fe3ef5eb595210e399d1a"
+  },
+
+  {
+    "review": "Bosra’s lands in Daraa are ideal for wheat and barley, with access to Jordanian markets nearby.",
+    "rating": 5,
+    "user": "687bdcf58cc9eef33fbc5f58",
+    "land": "687fe3ef5eb595210e399d1b"
+  },
+  {
+    "review": "This strategic location near Bosra makes agricultural exports more accessible and profitable.",
+    "rating": 4.9,
+    "user": "687bdcdb8cc9eef33fbc5f55",
+    "land": "687fe3ef5eb595210e399d1b"
+  },
+
+  {
+    "review": "Masyaf’s green plains are excellent for sunflowers and seasonal crops, thanks to reliable irrigation.",
+    "rating": 5,
+    "user": "687bdcf58cc9eef33fbc5f58",
+    "land": "687fe3ef5eb595210e399d1c"
+  },
+  {
+    "review": "The surrounding infrastructure near Masyaf helps streamline logistics for agricultural production.",
+    "rating": 4.9,
+    "user": "687bdcdb8cc9eef33fbc5f55",
+    "land": "687fe3ef5eb595210e399d1c"
+  },
+
+  {
+    "review": "Baniyas in Tartus has a mild coastal climate ideal for citrus orchards and eco-agriculture.",
+    "rating": 5,
+    "user": "687bdcc08cc9eef33fbc5f52",
+    "land": "687fe3ef5eb595210e399d1d"
+  },
+  {
+    "review": "Access to Tartus port makes export of fruits and herbs from Baniyas easier and more profitable.",
+    "rating": 4.8,
+    "user": "687bdc8d8cc9eef33fbc5f4e",
+    "land": "687fe3ef5eb595210e399d1d"
+  },
+
+  {
+    "review": "Jableh's coastline provides tourism and farming fusion opportunities, especially for citrus and greenhouse vegetables.",
+    "rating": 5,
+    "user": "687bdcc08cc9eef33fbc5f52",
+    "land": "687fe3ef5eb595210e399d1e"
+  },
+  {
+    "review": "The land near Jableh is fertile and well-connected, ideal for both agriculture and tourism ventures.",
+    "rating": 4.9,
+    "user": "687bdc8d8cc9eef33fbc5f4e",
+    "land": "687fe3ef5eb595210e399d1e"
+  },
+
+  {
+    "review": "Al Mayadin's access to the Euphrates supports productive farming with large-scale irrigation.",
+    "rating": 5,
+    "user": "687bdc528cc9eef33fbc5f48",
+    "land": "687fe3ef5eb595210e399d17"
+  },
+  {
+    "review": "Deir ez-Zor lands near Al Mayadin are ideal for rice, wheat, and vegetables with strong water access.",
+    "rating": 4.8,
+    "user": "687bdc6b8cc9eef33fbc5f4b",
+    "land": "687fe3ef5eb595210e399d17"
+  },
+
+  {
+    "review": "Al-Qadam near Damascus is an ideal spot for orchard farming, with stable water access and climate.",
+    "rating": 5,
+    "user": "687bdc528cc9eef33fbc5f48",
+    "land": "687fe3ef5eb595210e399d16"
+  },
+  {
+    "review": "The close proximity to Damascus markets offers fast distribution for fresh produce from Al-Qadam.",
+    "rating": 4.9,
+    "user": "687bdc6b8cc9eef33fbc5f4b",
+    "land": "687fe3ef5eb595210e399d16"
+  }
+]

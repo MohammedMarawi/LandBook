@@ -2,8 +2,9 @@ const express = require('express');
 const cors = require('cors');
 const bookingsRoutes = require('../routes');
 const landRoutes = require('../routes');
-const  userRoutes = require('../routes');
+const userRoutes = require('../routes');
 const reviewRoutes = require('../routes');
+const uploadRoutes = require('../routes') ; 
 const errorHandler = require('../middleware/errorHandler');
 const AppError = require('../utils/appError');
 const rateLimit = require('express-rate-limit');
@@ -17,6 +18,8 @@ const configureApp = (app) => {
   app.use('/api', landRoutes);
   app.use('/api', userRoutes);
   app.use('/api', reviewRoutes);
+  app.use('/api', uploadRoutes);
+
    
   if (process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'));

@@ -18,14 +18,31 @@ router.use('/:landId/reviews', reviewRouter);
 router.get('/lands-stats', Landcontrollers.getLandsStats);
 router.get('/stats/location', Landcontrollers.getLandStatsByLocation);
 
+router
+  .route('/:id/reserve')
+  .patch(
+  authcontrollers.protect,
+  authcontrollers.restrictTo('user', 'investor'),
+  Landcontrollers.reserveLand
+);
+
+router
+  .route('/:id/approve')
+  .patch(
+    authcontrollers.protect,
+    authcontrollers.restrictTo('admin'),
+    Landcontrollers.approveLand
+  );
 
 router
   .route('/')
   .get(Landcontrollers.getAllLands)
   .post(
     authcontrollers.protect,
+    authcontrollers.restrictTo('landowner'),
     Landcontrollers.createLand
   ); // chain middleware
+
 router
   .route('/:id')
   .get(Landcontrollers.getSingleLand)
@@ -40,10 +57,5 @@ router
     authcontrollers.restrictTo('admin'),
     Landcontrollers.deleteLand
   );
-  // router
-  // .route('/:landId/reviews')
-  // .post(authcontrollers.protect,
-  //   authcontrollers.restrictTo('user', 'investor'),
-  //   reviewRouter.createReviews
-  // );
+
 module.exports = router;
