@@ -34,18 +34,16 @@ exports.getSingleLand = catchAsync(async (req, res, next) => {
 
 // ======================= CREATE LAND =======================
 exports.createLand = catchAsync(async (req, res, next) => {
-  if (!req.file) return next(new AppError('Please upload an image', 400));
-
-  const result = await cloudinary.uploader.upload(req.file.path, {
-    folder: 'lands',
-  });
+  if (!req.file) {
+    return next(new AppError('Please upload an image', 400));
+  }
 
   if (!req.body.status) req.body.status = 'available';
 
   const newLand = await Land.create({
     ...req.body,
-    imageUrl: result.secure_url,
-    imageId: result.public_id,
+    imageUrl: req.file.path,     // رابط الصورة من Cloudinary
+    imageId: req.file.filename,  // الـ public_id
   });
 
   res.status(201).json({

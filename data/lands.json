@@ -18,26 +18,48 @@
     "ratingsAverage": 4.9,
     "ratingsQuantity": 2,
     "description": "A lush olive farm with rich soil and excellent irrigation, perfect for long-term investment.",
-    "currentCrop": ["Olive", "Wheat"],
+    "currentCrop": [
+      "Olive",
+      "Wheat"
+    ],
     "treeAge": 10,
     "workersNumber": 3,
-    "equipments": ["Tractor", "Sprayer", "Harvester"],
-    "waterSource": ["Well", "Rainwater"],
+    "equipments": [
+      "Tractor",
+      "Sprayer",
+      "Harvester"
+    ],
+    "waterSource": [
+      "Well",
+      "Rainwater"
+    ],
     "averageRainfall": 400,
-    "irrigationMethods": ["Drip", "Sprinkler"],
-    "soilTypes": ["Loamy", "Clay"],
-    "suitableCrops": ["Olives", "Wheat", "Barley"],
+    "irrigationMethods": [
+      "Drip",
+      "Sprinkler"
+    ],
+    "soilTypes": [
+      "Loamy",
+      "Clay"
+    ],
+    "suitableCrops": [
+      "Olives",
+      "Wheat",
+      "Barley"
+    ],
     "climateDescription": "Mediterranean climate with mild wet winters and hot dry summers.",
     "estimatedReturns": "12000 USD per season",
     "contractDuration": "5 Months",
     "location": {
-      "coordinates": [37.1591, 36.2021],
+      "coordinates": [
+        37.1591,
+        36.2021
+      ],
       "address": "Aleppo Countryside, Near Azaz",
       "village": "Azaz"
     },
     "landMedia": [
-      "https://example.com/lands/aleppo1.jpg",
-      "https://example.com/videos/aleppo-land.mp4"
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1755910769/lands/pnbjlnrfu7mfby8dpkli.png"
     ],
     "isApproved": "approved",
     "status": "reserved"
@@ -61,26 +83,47 @@
     "ratingsAverage": 4.8,
     "ratingsQuantity": 2,
     "description": "Extensive wheat farmland ready for seasonal investment with great accessibility.",
-    "currentCrop": ["Apple", "Peach"],
+    "currentCrop": [
+      "Apple",
+      "Peach"
+    ],
     "treeAge": 20,
     "workersNumber": 4,
-    "equipments": ["Tractor", "Irrigation Pump", "Pruner"],
-    "waterSource": ["River", "Well"],
+    "equipments": [
+      "Tractor",
+      "Irrigation Pump",
+      "Pruner"
+    ],
+    "waterSource": [
+      "River",
+      "Well"
+    ],
     "averageRainfall": 350,
-    "irrigationMethods": ["Flood", "Drip"],
-    "soilTypes": ["Sandy Loam"],
-    "suitableCrops": ["Apples", "Peaches", "Grapes"],
+    "irrigationMethods": [
+      "Flood",
+      "Drip"
+    ],
+    "soilTypes": [
+      "Sandy Loam"
+    ],
+    "suitableCrops": [
+      "Apples",
+      "Peaches",
+      "Grapes"
+    ],
     "climateDescription": "Temperate climate with adequate rainfall throughout the year.",
     "estimatedReturns": "20000 USD per season",
     "contractDuration": "3 Months",
     "location": {
-      "coordinates": [36.7111, 34.7266],
+      "coordinates": [
+        36.7111,
+        34.7266
+      ],
       "address": "Homs Countryside, Near Talkalakh",
       "village": "Talkalakh"
     },
     "landMedia": [
-      "https://example.com/lands/homs1.jpg",
-      "https://example.com/videos/homs-land.mp4"
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1755911010/lands/rtmwsza05de11x0fyivc.jpg"
     ],
     "isApproved": "approved",
     "status": "reserved"
@@ -104,26 +147,44 @@
     "ratingsAverage": 4.6,
     "ratingsQuantity": 2,
     "description": "Beautiful grape farm with high export potential and modern irrigation system.",
-    "currentCrop": ["Tomato", "Cucumber"],
+    "currentCrop": [
+      "Tomato",
+      "Cucumber"
+    ],
     "treeAge": 30,
     "workersNumber": 9,
-    "equipments": ["Sprayer", "Harvester"],
-    "waterSource": ["Well"],
+    "equipments": [
+      "Sprayer",
+      "Harvester"
+    ],
+    "waterSource": [
+      "Well"
+    ],
     "averageRainfall": 320,
-    "irrigationMethods": ["Drip"],
-    "soilTypes": ["Loamy"],
-    "suitableCrops": ["Tomatoes", "Cucumbers", "Peppers"],
+    "irrigationMethods": [
+      "Drip"
+    ],
+    "soilTypes": [
+      "Loamy"
+    ],
+    "suitableCrops": [
+      "Tomatoes",
+      "Cucumbers",
+      "Peppers"
+    ],
     "climateDescription": "Mediterranean climate with moderate rainfall.",
     "estimatedReturns": "18000 USD per season",
     "contractDuration": "4 Months",
     "location": {
-      "coordinates": [36.6443, 35.7159],
+      "coordinates": [
+        36.6443,
+        35.7159
+      ],
       "address": "Idlib Countryside, Near Maaret Tamsrin",
       "village": "Maaret Tamsrin"
     },
     "landMedia": [
-      "https://example.com/lands/idlib1.jpg",
-      "https://example.com/videos/idlib-land.mp4"
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1755911012/lands/grt4e33zfshyv9hfxysd.jpg"
     ],
     "isApproved": "approved",
     "status": "reserved"
@@ -147,26 +208,44 @@
     "ratingsAverage": 4.9,
     "ratingsQuantity": 2,
     "description": "Ideal for grain farming with rich soil and water availability.",
-    "currentCrop": ["Wheat", "Barley"],
+    "currentCrop": [
+      "Wheat",
+      "Barley"
+    ],
     "treeAge": 25,
     "workersNumber": 9,
-    "equipments": ["Tractor", "Combine Harvester"],
-    "waterSource": ["River"],
+    "equipments": [
+      "Tractor",
+      "Combine Harvester"
+    ],
+    "waterSource": [
+      "River"
+    ],
     "averageRainfall": 280,
-    "irrigationMethods": ["Flood"],
-    "soilTypes": ["Clay"],
-    "suitableCrops": ["Wheat", "Barley", "Corn"],
+    "irrigationMethods": [
+      "Flood"
+    ],
+    "soilTypes": [
+      "Clay"
+    ],
+    "suitableCrops": [
+      "Wheat",
+      "Barley",
+      "Corn"
+    ],
     "climateDescription": "Semi-arid climate with hot summers and mild winters.",
     "estimatedReturns": "22000 USD per season",
     "contractDuration": "6 Months",
     "location": {
-      "coordinates": [39.0123, 35.95],
+      "coordinates": [
+        39.0123,
+        35.95
+      ],
       "address": "Raqqa Countryside, Near Tell Abyad",
       "village": "Tell Abyad"
     },
     "landMedia": [
-      "https://example.com/lands/raqqa1.jpg",
-      "https://example.com/videos/raqqa-land.mp4"
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1755911014/lands/bxwzhtw4ckiyisljbncl.jpg"
     ],
     "isApproved": "approved",
     "status": "reserved"
@@ -190,26 +269,48 @@
     "ratingsAverage": 4.5,
     "ratingsQuantity": 2,
     "description": "Rich agricultural land with advanced irrigation systems.",
-    "currentCrop": ["Tomato", "Potato"],
+    "currentCrop": [
+      "Tomato",
+      "Potato"
+    ],
     "treeAge": 35,
     "workersNumber": 6,
-    "equipments": ["Tractor", "Plough", "Irrigation System"],
-    "waterSource": ["Well", "River"],
+    "equipments": [
+      "Tractor",
+      "Plough",
+      "Irrigation System"
+    ],
+    "waterSource": [
+      "Well",
+      "River"
+    ],
     "averageRainfall": 370,
-    "irrigationMethods": ["Drip", "Flood"],
-    "soilTypes": ["Sandy", "Loamy"],
-    "suitableCrops": ["Tomatoes", "Potatoes", "Onions"],
+    "irrigationMethods": [
+      "Drip",
+      "Flood"
+    ],
+    "soilTypes": [
+      "Sandy",
+      "Loamy"
+    ],
+    "suitableCrops": [
+      "Tomatoes",
+      "Potatoes",
+      "Onions"
+    ],
     "climateDescription": "Mediterranean climate with wet winters and dry summers.",
     "estimatedReturns": "25000 USD per season",
     "contractDuration": "2 Months",
     "location": {
-      "coordinates": [36.1044, 32.6189],
+      "coordinates": [
+        36.1044,
+        32.6189
+      ],
       "address": "Daraa Countryside, Near Bosra",
       "village": "Bosra"
     },
     "landMedia": [
-      "https://example.com/lands/daraa1.jpg",
-      "https://example.com/videos/daraa-land.mp4"
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1755911016/lands/jvocvlipyeup8u30fzpz.jpg"
     ],
     "isApproved": "approved",
     "status": "reserved"
@@ -233,26 +334,47 @@
     "ratingsAverage": 5,
     "ratingsQuantity": 2,
     "description": "Perfect land for diverse crops with consistent rainfall.",
-    "currentCrop": ["Corn", "Soybean"],
+    "currentCrop": [
+      "Corn",
+      "Soybean"
+    ],
     "treeAge": 40,
     "workersNumber": 20,
-    "equipments": ["Tractor", "Seeder", "Harvester"],
-    "waterSource": ["Rainwater", "Well"],
+    "equipments": [
+      "Tractor",
+      "Seeder",
+      "Harvester"
+    ],
+    "waterSource": [
+      "Rainwater",
+      "Well"
+    ],
     "averageRainfall": 450,
-    "irrigationMethods": ["Sprinkler"],
-    "soilTypes": ["Loamy", "Clay"],
-    "suitableCrops": ["Corn", "Soybean", "Wheat"],
+    "irrigationMethods": [
+      "Sprinkler"
+    ],
+    "soilTypes": [
+      "Loamy",
+      "Clay"
+    ],
+    "suitableCrops": [
+      "Corn",
+      "Soybean",
+      "Wheat"
+    ],
     "climateDescription": "Mild Mediterranean climate with steady rainfall.",
     "estimatedReturns": "30000 USD per season",
     "contractDuration": "7 Months",
     "location": {
-      "coordinates": [35.1318, 36.7578],
+      "coordinates": [
+        35.1318,
+        36.7578
+      ],
       "address": "Hama Countryside, Near Masyaf",
       "village": "Masyaf"
     },
     "landMedia": [
-      "https://example.com/lands/hama1.jpg",
-      "https://example.com/videos/hama-land.mp4"
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1755911017/lands/mhq4xklqblvvvad3twob.jpg"
     ],
     "isApproved": "approved",
     "status": "reserved"
@@ -276,28 +398,46 @@
     "ratingsAverage": 4.8,
     "ratingsQuantity": 2,
     "description": "Fertile lands near the coast with excellent climate.",
-    "currentCrop": ["Olive", "Fig"],
+    "currentCrop": [
+      "Olive",
+      "Fig"
+    ],
     "treeAge": 45,
     "workersNumber": 15,
-    "equipments": ["Tractor", "Sprayer"],
-    "waterSource": ["Well", "Rainwater"],
+    "equipments": [
+      "Tractor",
+      "Sprayer"
+    ],
+    "waterSource": [
+      "Well",
+      "Rainwater"
+    ],
     "averageRainfall": 500,
-    "irrigationMethods": ["Drip"],
-    "soilTypes": ["Clay Loam"],
-    "suitableCrops": ["Olives", "Figs", "Grapes"],
+    "irrigationMethods": [
+      "Drip"
+    ],
+    "soilTypes": [
+      "Clay Loam"
+    ],
+    "suitableCrops": [
+      "Olives",
+      "Figs",
+      "Grapes"
+    ],
     "climateDescription": "Mediterranean climate with wet winters and dry summers.",
     "estimatedReturns": "28000 USD per season",
     "contractDuration": "8 Months",
     "location": {
-      "coordinates": [34.8875, 35.8833],
+      "coordinates": [
+        34.8875,
+        35.8833
+      ],
       "address": "Tartus Countryside, Near Baniyas",
       "village": "Baniyas"
     },
     "landMedia": [
-      "https://example.com/lands/tartus1.jpg",
-      "https://example.com/videos/tartus1-land.mp4"
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1755911019/lands/kn5whebfctvkjtwaja0m.jpg"
     ],
-
     "isApproved": "approved",
     "status": "reserved"
   },
@@ -320,26 +460,45 @@
     "ratingsAverage": 5,
     "ratingsQuantity": 2,
     "description": "Terraced fields ideal for diverse crop cultivation.",
-    "currentCrop": ["Tea", "Tobacco"],
+    "currentCrop": [
+      "Tea",
+      "Tobacco"
+    ],
     "treeAge": 50,
     "workersNumber": 25,
-    "equipments": ["Harvester", "Irrigation Pump"],
-    "waterSource": ["Rainwater"],
+    "equipments": [
+      "Harvester",
+      "Irrigation Pump"
+    ],
+    "waterSource": [
+      "Rainwater"
+    ],
     "averageRainfall": 550,
-    "irrigationMethods": ["Sprinkler", "Drip"],
-    "soilTypes": ["Silty Loam"],
-    "suitableCrops": ["Tea", "Tobacco", "Citrus"],
+    "irrigationMethods": [
+      "Sprinkler",
+      "Drip"
+    ],
+    "soilTypes": [
+      "Silty Loam"
+    ],
+    "suitableCrops": [
+      "Tea",
+      "Tobacco",
+      "Citrus"
+    ],
     "climateDescription": "Humid Mediterranean climate with high rainfall.",
     "estimatedReturns": "35000 USD per season",
     "contractDuration": "10 Months",
     "location": {
-      "coordinates": [35.5233, 35.7917],
+      "coordinates": [
+        35.5233,
+        35.7917
+      ],
       "address": "Latakia Countryside, Near Jableh",
       "village": "Jableh"
     },
     "landMedia": [
-      "https://example.com/lands/latakia1.jpg",
-      "https://example.com/videos/latakia-land.mp4"
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1755911020/lands/q4fmzyomhtvmyui5c1nf.jpg"
     ],
     "isApproved": "approved",
     "status": "reserved"
@@ -363,26 +522,45 @@
     "ratingsAverage": 5,
     "ratingsQuantity": 2,
     "description": "Land along Euphrates River suitable for various crops.",
-    "currentCrop": ["Cotton", "Barley"],
+    "currentCrop": [
+      "Cotton",
+      "Barley"
+    ],
     "treeAge": 28,
     "workersNumber": 5,
-    "equipments": ["Plough", "Irrigation System"],
-    "waterSource": ["River"],
+    "equipments": [
+      "Plough",
+      "Irrigation System"
+    ],
+    "waterSource": [
+      "River"
+    ],
     "averageRainfall": 300,
-    "irrigationMethods": ["Flood", "Drip"],
-    "soilTypes": ["Loamy"],
-    "suitableCrops": ["Cotton", "Barley", "Wheat"],
+    "irrigationMethods": [
+      "Flood",
+      "Drip"
+    ],
+    "soilTypes": [
+      "Loamy"
+    ],
+    "suitableCrops": [
+      "Cotton",
+      "Barley",
+      "Wheat"
+    ],
     "climateDescription": "Semi-arid climate with hot summers.",
     "estimatedReturns": "27000 USD per season",
     "contractDuration": "12 Months",
     "location": {
-      "coordinates": [40.1603, 35.855],
+      "coordinates": [
+        40.1603,
+        35.855
+      ],
       "address": "Deir ez-Zor Countryside, Near Al Mayadin",
       "village": "Al Mayadin"
     },
     "landMedia": [
-      "https://example.com/lands/deir1.jpg",
-      "https://example.com/videos/deir-land.mp4"
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1755911022/lands/lq3oidr9aox0bp2fimd7.jpg"
     ],
     "isApproved": "approved",
     "status": "reserved"
@@ -406,26 +584,45 @@
     "ratingsAverage": 5,
     "ratingsQuantity": 2,
     "description": "Ideal for grain and vegetable farming with modern facilities.",
-    "currentCrop": ["Corn", "Potato"],
+    "currentCrop": [
+      "Corn",
+      "Potato"
+    ],
     "treeAge": 60,
     "workersNumber": 30,
-    "equipments": ["Tractor", "Seeder", "Harvester"],
-    "waterSource": ["Well"],
+    "equipments": [
+      "Tractor",
+      "Seeder",
+      "Harvester"
+    ],
+    "waterSource": [
+      "Well"
+    ],
     "averageRainfall": 400,
-    "irrigationMethods": ["Drip"],
-    "soilTypes": ["Silty Loam"],
-    "suitableCrops": ["Corn", "Potato", "Wheat"],
+    "irrigationMethods": [
+      "Drip"
+    ],
+    "soilTypes": [
+      "Silty Loam"
+    ],
+    "suitableCrops": [
+      "Corn",
+      "Potato",
+      "Wheat"
+    ],
     "climateDescription": "Continental climate with cold winters and warm summers.",
     "estimatedReturns": "33000 USD per season",
     "contractDuration": "13 Months",
     "location": {
-      "coordinates": [36.2931, 33.5138],
+      "coordinates": [
+        36.2931,
+        33.5138
+      ],
       "address": "Damascus Suburb",
       "village": "Al-Qadam"
     },
     "landMedia": [
-      "https://example.com/lands/damascus1.jpg",
-      "https://example.com/videos/damascus-land.mp4"
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1755911025/lands/fleebvvnjpokqijjk7at.jpg"
     ],
     "isApproved": "approved",
     "status": "reserved"

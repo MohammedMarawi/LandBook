@@ -19,4 +19,5 @@ router.use('/v1/users' , userRoutes)
 router.use('/v1/reviews' , reviewRoutes)
 
 router.use('/v1/upload' , uploadRoutes)
+
 module.exports = router;

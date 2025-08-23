@@ -2,6 +2,7 @@ const express = require('express');
 const Landcontrollers = require('../controllers/landsController');
 const authcontrollers = require('../controllers/authController');
 const reviewRouter = require('../routes/reviewRoutes');
+const upload = require('../utils/multer')
 const router = express.Router();
 
 // POST / land /:landId/reviews
@@ -40,6 +41,7 @@ router
   .post(
     authcontrollers.protect,
     authcontrollers.restrictTo('landowner'),
+    upload.single('image'),          
     Landcontrollers.createLand
   ); // chain middleware
 
