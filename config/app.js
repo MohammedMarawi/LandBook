@@ -14,6 +14,12 @@ const morgan = require('morgan');
 const configureApp = (app) => {
   app.use(express.json());
 
+  app.use(
+    cors({
+      origin: '*',
+    })
+  );
+  
   app.use('/api', bookingsRoutes);
   app.use('/api', landRoutes);
   app.use('/api', userRoutes);
@@ -24,11 +30,6 @@ const configureApp = (app) => {
   if (process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'));
   }
-app.use(
-  cors({
-    origin: '*',
-  })
-);
 
    const limiter = rateLimit({
     max: 100,
