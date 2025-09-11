@@ -2,18 +2,15 @@ const cloudinary = require('cloudinary').v2;
 const multer = require('multer');
 const AppError = require('../utils/appError');
 
-// إعداد Cloudinary
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
   api_key: process.env.CLOUDINARY_API_KEY,
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-// إعداد multer للتخزين في الذاكرة
 const storage = multer.memoryStorage();
 const upload = multer({ storage });
 
-// ======================= رفع صورة =======================
 exports.uploadImage = [
   upload.single('file'),
   async (req, res, next) => {
@@ -42,7 +39,6 @@ exports.uploadImage = [
   },
 ];
 
-// ======================= رفع فيديو =======================
 exports.uploadVideo = [
   upload.single('file'),
   async (req, res, next) => {
@@ -71,7 +67,6 @@ exports.uploadVideo = [
   },
 ];
 
-// ======================= حذف ملف =======================
 exports.deleteFile = async (req, res, next) => {
   try {
     const { public_id, resource_type } = req.body;
@@ -81,7 +76,7 @@ exports.deleteFile = async (req, res, next) => {
     }
 
     const result = await cloudinary.uploader.destroy(public_id, {
-      resource_type: resource_type || 'image', // image أو video
+      resource_type: resource_type || 'image', 
     });
 
     res.status(200).json({
@@ -94,7 +89,6 @@ exports.deleteFile = async (req, res, next) => {
   }
 };
 
-// ======================= استعراض الملفات =======================
 exports.listFiles = async (req, res, next) => {
   try {
     const { folder = 'landbook_uploads' } = req.query;
@@ -102,7 +96,7 @@ exports.listFiles = async (req, res, next) => {
     const result = await cloudinary.api.resources({
       type: 'upload',
       prefix: folder,
-      max_results: 300, // يمكن تعديل العدد
+      max_results: 300, 
     });
 
     res.status(200).json({

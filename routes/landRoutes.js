@@ -5,11 +5,7 @@ const reviewRouter = require('../routes/reviewRoutes');
 const upload = require('../utils/multer')
 const router = express.Router();
 
-// POST / land /:landId/reviews
-// GET / land /:landId/reviews
-// GET / land /:landId/reviews/:id
-// PATCH / land /:landId/reviews/:id
-// DELETE / land /:landId/reviews/:id
+
 
 router.use('/:landId/reviews', reviewRouter);
 
@@ -43,7 +39,7 @@ router
     authcontrollers.restrictTo('landowner'),
     upload.single('image'),          
     Landcontrollers.createLand
-  ); // chain middleware
+  ); 
 
 router
   .route('/:id')

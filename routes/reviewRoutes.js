@@ -3,11 +3,6 @@ const reviewController = require('../controllers/reviewController');
 const authController = require('../controllers/authController');
 const router = express.Router({ mergeParams: true });
 
-// POST / land /:landId/reviews
-// GET / land /:landId/reviews
-// GET / land /:landId/reviews/:id
-// PATCH / land /:landId/reviews/:id
-// DELETE / land /:landId/reviews/:id
 
 
 router

@@ -3,7 +3,6 @@ const AppError = require('../utils/appError');
 const catchAsync = require('../utils/catchAsync');
 const APIFeatures = require('../utils/apiFeatures');
 exports.getAllReviews = catchAsync(async (req, res, next) => {
-  // Allow nested routes
   let filter = {};
   if (req.params.landId) filter = { land: req.params.landId };
   const features = new APIFeatures(Review.find(filter), req.query)
@@ -12,8 +11,6 @@ exports.getAllReviews = catchAsync(async (req, res, next) => {
     .limitFields() 
     .paginate() 
   const reviews = await features.query;
-  // SEND RESPONSSE
-  // console.log (lands.length)
   res.status(200).json({
     status: 'success',
     results: reviews.length,
@@ -24,7 +21,6 @@ exports.getAllReviews = catchAsync(async (req, res, next) => {
 });
 
 exports.createReviews = catchAsync(async (req, res, next) => {
-  // Allow nested routes
   if (!req.body.land) req.body.land = req.params.landId;
   if (!req.body.user) req.body.user = req.user.id;
 
@@ -76,10 +72,3 @@ exports.deleteReview = catchAsync(async (req, res, next) => {
     data: null,
   });
 });
-// Nested Routes
-
-// POST / land /:landId/reviews
-// GET / land /:landId/reviews
-// GET / land /:landId/reviews/:id
-// PATCH / land /:landId/reviews/:id
-// DELETE / land /:landId/reviews/:id

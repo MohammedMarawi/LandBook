@@ -7,7 +7,6 @@ const Review = require('../models/reviewsModel');
 const connectDB = require('../config/database'); 
 
 
-////*
 // const lands = JSON.parse(fs.readFileSync(`${__dirname}/lands.json`, 'utf-8'));
 const users = JSON.parse(fs.readFileSync(`${__dirname}/users.json`, 'utf-8'));
 // const reviews = JSON.parse(fs.readFileSync(`${__dirname}/reviews.json`, 'utf-8'));
@@ -28,7 +27,7 @@ const createData = async () => {
 
 const deleteAllData = async () => {
   try {
-    await connectDB();  // ✅ الاتصال مطلوب هنا أيضًا
+    await connectDB();  
     // await Land.deleteMany();
     await User.deleteMany();
     // await Review.deleteMany();

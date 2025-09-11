@@ -77,7 +77,6 @@ async function completeBooking(bookingId, evaluationData) {
   return { message: 'Booking completed and history saved successfully' };
 }
 
-// دالة تجريبية لإرجاع بيانات تقييم ثابتة
 function getTestEvaluationData() {
   return {
     crop: 'bnana',

@@ -4,7 +4,6 @@ const { updateExpiredBookings, completeExpiredConfirmedBookings , getTestEvaluat
 
 async function expireBookings() {
   const result = await updateExpiredBookings();
-  console.log(`[${new Date().toISOString()}] Expired ${result.modifiedCount} bookings`);
   return result.modifiedCount;
 }
 
@@ -12,7 +11,6 @@ async function expireBookings() {
 
 async function autoCompleteBookings() {
   const count = await completeExpiredConfirmedBookings();
-  console.log(`[${new Date().toISOString()}] Completed ${count} bookings automatically.`);
   return count;
 }
 
@@ -20,7 +18,7 @@ async function autoCompleteBookings() {
 
 async function runBookingMaintenanceJob() {
   try {
-    console.log(`[${new Date().toISOString()}] Running booking maintenance job...`);
+    (`[${new Date().toISOString()}] Running booking maintenance job...`);
     await expireBookings();
     await completeExpiredConfirmedBookings();
   } catch (error) {
@@ -30,9 +28,8 @@ async function runBookingMaintenanceJob() {
 
 
 function scheduleBookingJobs(intervalMs = 60 * 1000) {
-  runBookingMaintenanceJob(); // Run immediately on startup
+  runBookingMaintenanceJob(); 
   setInterval(runBookingMaintenanceJob, intervalMs);
-  console.log(`Booking maintenance job scheduled every ${intervalMs / 1000 / 60} minutes`);
 }
 
 module.exports = {

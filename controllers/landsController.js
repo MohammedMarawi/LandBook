@@ -5,7 +5,6 @@ const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
 const cloudinary = require('cloudinary').v2;
 
-// ======================= GET ALL LANDS =======================
 exports.getAllLands = catchAsync(async (req, res, next) => {
   const features = new APIFeatures(Land.find(), req.query)
     .filter() 
@@ -21,7 +20,6 @@ exports.getAllLands = catchAsync(async (req, res, next) => {
   });
 });
 
-// ======================= GET SINGLE LAND =======================
 exports.getSingleLand = catchAsync(async (req, res, next) => {
   const land = await Land.findById(req.params.id).populate('reviews');
   if (!land) return next(new AppError('No land found with that ID', 404));
@@ -32,7 +30,6 @@ exports.getSingleLand = catchAsync(async (req, res, next) => {
   });
 });
 
-// ======================= CREATE LAND =======================
 exports.createLand = catchAsync(async (req, res, next) => {
   if (!req.file) {
     return next(new AppError('Please upload an image', 400));
@@ -42,8 +39,8 @@ exports.createLand = catchAsync(async (req, res, next) => {
 
   const newLand = await Land.create({
     ...req.body,
-    imageUrl: req.file.path,     // رابط الصورة من Cloudinary
-    imageId: req.file.filename,  // الـ public_id
+    imageUrl: req.file.path,     
+    imageId: req.file.filename,  
   });
 
   res.status(201).json({
@@ -52,12 +49,10 @@ exports.createLand = catchAsync(async (req, res, next) => {
   });
 });
 
-// ======================= UPDATE LAND =======================
 exports.updateLand = catchAsync(async (req, res, next) => {
   const land = await Land.findById(req.params.id);
   if (!land) return next(new AppError('No land found with that ID', 404));
 
-  // تحديث الصورة إذا تم رفع واحدة جديدة
   if (req.file) {
     if (land.imageId) await cloudinary.uploader.destroy(land.imageId);
 
@@ -80,12 +75,10 @@ exports.updateLand = catchAsync(async (req, res, next) => {
   });
 });
 
-// ======================= DELETE LAND =======================
 exports.deleteLand = catchAsync(async (req, res, next) => {
   const land = await Land.findById(req.params.id);
   if (!land) return next(new AppError('No land found with that ID', 404));
 
-  // حذف الصورة من Cloudinary
   if (land.imageId) await cloudinary.uploader.destroy(land.imageId);
 
   await land.remove();
@@ -96,7 +89,6 @@ exports.deleteLand = catchAsync(async (req, res, next) => {
   });
 });
 
-// ======================= RESERVE LAND =======================
 exports.reserveLand = catchAsync(async (req, res, next) => {
   const land = await Land.findById(req.params.id);
   if (!land) return next(new AppError('No land found with that ID', 404));
@@ -118,7 +110,6 @@ exports.reserveLand = catchAsync(async (req, res, next) => {
   });
 });
 
-// ======================= APPROVE OR REJECT LAND =======================
 exports.approveLand = catchAsync(async (req, res, next) => {
   const { id } = req.params;
   const { status } = req.body;
@@ -159,7 +150,6 @@ exports.approveLand = catchAsync(async (req, res, next) => {
   }
 });
 
-// ======================= LAND STATS =======================
 exports.getLandsStats = catchAsync(async (req, res, next) => {
   const stats = await Land.aggregate([
     {

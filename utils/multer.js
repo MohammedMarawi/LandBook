@@ -6,8 +6,8 @@ const storage = new CloudinaryStorage({
   cloudinary,
   params: async (req, file) => {
     return {
-      folder: 'lands',             // مجلد في Cloudinary
-      resource_type: 'auto',       // auto = صور + فيديو
+      folder: 'lands',             
+      resource_type: 'auto',       
       public_id: Date.now() + '-' + file.originalname.split('.')[0],
     };
   },

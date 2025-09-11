@@ -72,7 +72,6 @@ exports.getAll = (Model) =>
       .limitFields() 
       .paginate() 
     const users = await features.query;
-    // SEND RESPONSSE
     res.status(200).json({
       status: 'success',
       results: users.length,

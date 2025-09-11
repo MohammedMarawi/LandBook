@@ -2,11 +2,10 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 const Land = require('../models/landsModel');
 const BookingHistory = require('../models/booking/BookingHistory');
-const User = require('../models/usersModel'); // تأكد من المسار الصحيح
-const Review = require('../models/reviewsModel'); // أو المسار الصحيح
+const User = require('../models/usersModel');
+const Review = require('../models/reviewsModel'); 
 const { getSeasonFromDate } = require('../utils/dateUtils');
 
-// دوال مساعدة
 function randomItem(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
@@ -47,11 +46,11 @@ async function seedLandHistories() {
     const lands = await Land.find();
     const users = await User.find();
     if (users.length === 0) {
-      throw new Error("❌ لا يوجد مستخدمين في قاعدة البيانات! يجب إنشاء مستخدمين أولاً.");
+      throw new Error("error");
     }
 
     for (const land of lands) {
-      const numBookings = Math.floor(Math.random() * 4) + 1; // 1-4 سجلات لكل أرض
+      const numBookings = Math.floor(Math.random() * 4) + 1; 
 
       for (let i = 0; i < numBookings; i++) {
         const evaluation = getRandomEvaluationData();
@@ -61,7 +60,6 @@ async function seedLandHistories() {
         const endDate = new Date(startDate);
         endDate.setMonth(endDate.getMonth() + 6);
 
-        // اختيار مستخدم عشوائي لكل سجل
         const chosenUser = randomItem(users);
 
         await BookingHistory.create({
@@ -78,10 +76,10 @@ async function seedLandHistories() {
       }
     }
 
-    console.log("✅ تم إنشاء سجلات تاريخية لكل الأراضي وكلها مرتبطة بمستخدمين");
+    console.log("create");
     process.exit();
   } catch (err) {
-    console.error("❌ خطأ أثناء إنشاء السجلات:", err);
+    console.error("error", err);
     process.exit(1);
   }
 }

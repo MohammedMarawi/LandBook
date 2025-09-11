@@ -3,7 +3,6 @@ const validator = require('validator');
 
 const LandSchema = new mongoose.Schema(
   {
-    // User Information
     firstName: {
       type: String,
       required: [true, 'Please provide your first name.'],
@@ -167,7 +166,7 @@ const LandSchema = new mongoose.Schema(
     },
     location: {
       coordinates: {
-        type: [Number], // [longitude, latitude]
+        type: [Number], 
         required: [true, 'Please provide the land coordinates.'],
       },
       address: {

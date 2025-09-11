@@ -5,8 +5,7 @@ const handleCastErrorDB = (err) => {
   return new AppError(message, 400);
 };
 const handleCodeErrorDB = (err) => {
-  const value = err.errmsg.match(/(["'])(\\?.)*?\1/)[0]; // First el of array;[0]
-  // console.log(value);
+  const value = err.errmsg.match(/(["'])(\\?.)*?\1/)[0]; 
   const message = `Duplicate field value: ${value} Please use another value`;
   return new AppError(message, 400);
 };
@@ -15,10 +14,8 @@ const handleValidationErrorDB = (err) => {
   const message = `Invalid input data. ${errors.join(', ')}`;
   return new AppError(message, 400);
 };
-// عندما يتم التعديل على Signature
 const handleJWTErorr = () =>
   new AppError('Invalid token. Please log in again!', 401);
-// عندما يتم انتهاء صلاحية ال Token
 const handleJWTExpired = () =>
   new AppError('Your token has expired Please log in again', 401);
 

@@ -14,7 +14,6 @@ const {
 
 
 
-// Create a new booking
 const createBooking = catchAsync(async (req, res, next) => {
   const { land, phoneNumber} = req.body;
   const userId = req.user.id;
@@ -24,7 +23,6 @@ const createBooking = catchAsync(async (req, res, next) => {
     await User.findByIdAndUpdate(req.user.id , {role: "inverstor"}) ;
   }
 
-  // Step 1: Check if user already has active booking
   if (await userHasActiveBooking(userId)) {
     return next(new AppError(
       'You already have an active booking. You cannot book another land until the current booking is processed.',
@@ -32,7 +30,6 @@ const createBooking = catchAsync(async (req, res, next) => {
     ));
   }
 
-  // Step 2: Check if the land is already reserved
   if (await landIsReserved(land)) {
     return next(new AppError(
       'This land is currently reserved by another user. Please try again later.',
@@ -40,10 +37,8 @@ const createBooking = catchAsync(async (req, res, next) => {
     ));
   }
 
-  // Step 3: Set booking end time (24 hours later)
   const endDate = new Date(Date.now() + 24 * 60 * 60 * 1000);
 
-  // Step 4: Create the booking
   const booking = await Booking.create({
     land,
     user : userId,
@@ -51,7 +46,6 @@ const createBooking = catchAsync(async (req, res, next) => {
     endDate
   });
 
-  // Step 5: Send response
   res.status(201).json({
     status: 'success',
     message: 'Land booked successfully. You will be contacted soon by the administration.',
@@ -63,19 +57,15 @@ const createBooking = catchAsync(async (req, res, next) => {
 
 
 
-// Get all bookings (with filtering, sorting, pagination, and field limiting)
 const getAllBookings = catchAsync(async (req, res, next) => {
-  // Build query with API features
   const queryBuilder = new APIFeatures(Booking.find(), req.query)
     .filter()
     .sort()
     .limitFields()
     .paginate();
 
-  // Execute query
   const bookings = await queryBuilder.query;
 
-  // Send response
   res.status(200).json({
     status: 'success',
     results: bookings.length,
@@ -85,22 +75,18 @@ const getAllBookings = catchAsync(async (req, res, next) => {
 
 
 
-// Get booking by ID
 const getBookingById = catchAsync(async (req, res, next) => {
   const { id } = req.params;
 
-  // Validate booking ID format
   if (!mongoose.Types.ObjectId.isValid(id)) {
     return next(new AppError('Invalid booking ID', 400));
   }
 
-  // Retrieve booking
   const booking = await Booking.findById(id);
   if (!booking) {
     return next(new AppError('Booking not found', 404));
   }
 
-  // Send success response
   res.status(200).json({
     status: 'success',
     data: { booking }
@@ -109,23 +95,19 @@ const getBookingById = catchAsync(async (req, res, next) => {
 
 
 
-// Update booking (admin only)
 const updateBooking = catchAsync(async (req, res, next) => {
   const { id } = req.params;
   const { status, adminNotes, meetingDate , endDate } = req.body;
 
-  // Validate ID
   if (!mongoose.Types.ObjectId.isValid(id)) {
     return next(new AppError('Invalid booking ID', 400));
   }
 
-  // Fetch booking
   const booking = await Booking.findById(id);
   if (!booking) {
     return next(new AppError('Booking not found', 404));
   }
 
-  // Prepare update fields
   const updates = {
     endDate,
     status,
@@ -135,13 +117,11 @@ const updateBooking = catchAsync(async (req, res, next) => {
     confirmedAt: status === 'confirmed' ? new Date() : booking.confirmedAt
   };
 
-  // Perform update
   const updatedBooking = await Booking.findByIdAndUpdate(id, updates, {
     new: true,
     runValidators: true,
   });
 
-  // Send response
   res.status(200).json({
     status: 'success',
     data: { booking: updatedBooking }
@@ -150,25 +130,19 @@ const updateBooking = catchAsync(async (req, res, next) => {
 
 
 
-// Delete booking (admin only)
 const deleteBooking = catchAsync(async (req, res, next) => {
   const { id } = req.params;
 
-  // Validate booking ID
   if (!mongoose.Types.ObjectId.isValid(id)) {
     return next(new AppError('Invalid booking ID', 400));
   }
 
-  // Find booking
   const booking = await Booking.findById(id);
   if (!booking) {
     return next(new AppError('Booking not found', 404));
   }
 
-  // Delete booking
-  await booking.deleteOne(); // أكثر وضوحًا من findByIdAndDelete(id)
-
-  // Send response
+  await booking.deleteOne(); 
   res.status(200).json({
     status: 'success',
     message: 'Booking deleted successfully.',
@@ -178,20 +152,16 @@ const deleteBooking = catchAsync(async (req, res, next) => {
 
 
 
-// Get user's active booking
 const getUserActiveBooking = catchAsync(async (req, res, next) => {
   const userId = req.user.id;
 
-  // Check if the user has an active booking
   const activeBooking = await Booking.hasActiveBooking(userId);
 
-  // Prepare response payload
   const response = {
     hasActiveBooking: Boolean(activeBooking),
     booking: activeBooking || null
   };
 
-  // Send response
   res.status(200).json({
     status: 'success',
     data: response
@@ -200,7 +170,6 @@ const getUserActiveBooking = catchAsync(async (req, res, next) => {
 
 
 
-// Get all bookings for a specific land
   const getBookingsByLand = catchAsync(async (req, res, next) => {
     const { landId } = req.params;
     
@@ -208,10 +177,8 @@ const getUserActiveBooking = catchAsync(async (req, res, next) => {
       return next(new AppError('Invalid land ID', 400));
     }
 
-    // Fetch bookings related to the land, newest first
     const bookings = await Booking.find({ land: landId }).sort('-createdAt');
 
-    // Send response
     res.status(200).json({
       status: 'success',
       results: bookings.length,
@@ -221,7 +188,6 @@ const getUserActiveBooking = catchAsync(async (req, res, next) => {
 
 
 
-// Check if a land is available for booking
 const checkLandAvailability = catchAsync(async (req, res, next) => {
   const { landId } = req.params;
 
@@ -229,7 +195,6 @@ const checkLandAvailability = catchAsync(async (req, res, next) => {
     return next(new AppError('Land ID is required', 400));
   }
 
-  // Find active (not expired) booking for the land
   const activeBooking = await Booking.findOne({
     land: landId,
     status: { $in: ['pending', 'confirmed'] },
@@ -253,7 +218,6 @@ const checkLandAvailability = catchAsync(async (req, res, next) => {
 });
 
 
-// Marks expired bookings based on their end date
 const expireOldBookings = catchAsync(async (req, res, next) => {
   const result = await updateExpiredBookings();
 
