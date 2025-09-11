@@ -9,15 +9,15 @@ const connectDB = require('../config/database');
 
 ////*
 // const lands = JSON.parse(fs.readFileSync(`${__dirname}/lands.json`, 'utf-8'));
-// const users = JSON.parse(fs.readFileSync(`${__dirname}/users.json`, 'utf-8'));
-const reviews = JSON.parse(fs.readFileSync(`${__dirname}/reviews.json`, 'utf-8'));
+const users = JSON.parse(fs.readFileSync(`${__dirname}/users.json`, 'utf-8'));
+// const reviews = JSON.parse(fs.readFileSync(`${__dirname}/reviews.json`, 'utf-8'));
 
 const createData = async () => {
   try {
     await connectDB();
     // await Land.create(lands);
-    // await User.create(users, {validateBeforeSave: false});
-    await Review.create(reviews);
+    await User.create(users, {validateBeforeSave: false});
+    // await Review.create(reviews);
     console.log('Data successfully loaded!');
   } catch (err) {
     console.error(' Create error:', err.message);
@@ -30,8 +30,8 @@ const deleteAllData = async () => {
   try {
     await connectDB();  // ✅ الاتصال مطلوب هنا أيضًا
     // await Land.deleteMany();
-    // await User.deleteMany();
-    await Review.deleteMany();
+    await User.deleteMany();
+    // await Review.deleteMany();
     console.log(' Data successfully deleted!');
   } catch (err) {
     console.error(' Delete error:', err.message);

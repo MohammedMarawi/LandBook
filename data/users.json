@@ -88,6 +88,14 @@
     "password": "$2b$12$dhLYPP/mpeEtKZ7N7tl7ye6gneq7Ksk8PguD8pvGpscbCH4rP0.WG"
   },
   {
+    "_id":"68c23f489385a6d9102f2376" , 
+    "name" : "Mohammed Marawi" , 
+    "email" : "MOHAMMEDMARAWI2@gmail.com" , 
+    "role" : "admin" , 
+    "active" : "true" , 
+    "password" : "1234azbz" 
+  },
+  {
     "_id": "687bdc108cc9eef33fbc5f42",
     "name": "Natheer Ayyan",
     "email": "natheer@gmail.com",
