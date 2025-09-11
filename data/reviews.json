@@ -1,131 +1,160 @@
 [
   {
-    "review": "Azaz's fertile lands near Aleppo are perfect for olive and wheat farming, combining tradition with logistics potential near Turkey.",
+    "review": "أرض شاسعة ومثمرة، مناسبة للزراعة المتنوعة والإنتاج الكبير.",
     "rating": 5,
     "user": "687bde098cc9eef33fbc5f6a",
-    "land": "687fe3ef5eb595210e399d15"
+    "land": "68a91660d6cbe36034878840"
   },
   {
-    "review": "The proximity to Azaz’s trade routes makes this land highly suitable for export-oriented agriculture.",
-    "rating": 4.9,
-    "user": "687bdde28cc9eef33fbc5f67",
-    "land": "687fe3ef5eb595210e399d15"
-  },
-
-  {
-    "review": "Talkalakh in Homs boasts moderate climate and rich soil, ideal for vegetables and grains.",
-    "rating": 5,
-    "user": "687bde098cc9eef33fbc5f6a",
-    "land": "687fe3ef5eb595210e399d18"
-  },
-  {
-    "review": "This land offers a great opportunity for irrigation-based farming with excellent productivity near Talkalakh.",
+    "review": "موقع ممتاز مع توفر مياه الري، استثمار طويل الأمد مضمون.",
     "rating": 4.8,
     "user": "687bdde28cc9eef33fbc5f67",
-    "land": "687fe3ef5eb595210e399d18"
+    "land": "68a91660d6cbe36034878840"
   },
-
   {
-    "review": "Maaret Tamsrin’s lands are known for pistachios and olives — a smart investment in Idlib countryside.",
-    "rating": 5,
+    "review": "فرصة رائعة لإنشاء مشروع زراعي ناجح بموارد وفيرة.",
+    "rating": 4.1,
+    "user": "687bdc6b8cc9eef33fbc5f4b",
+    "land": "68a91660d6cbe36034878840"
+  },
+  {
+    "review": "أرض خصبة مليئة بأشجار الزيتون والقمح، مثالية للاستثمار الزراعي.",
+    "rating": 4.9,
     "user": "687bdd698cc9eef33fbc5f60",
-    "land": "687fe3ef5eb595210e399d19"
+    "land": "68a91660d6cbe3603487883b"
   },
   {
-    "review": "Traditional farming expertise and favorable soil conditions make Idlib’s farms near Maaret Tamsrin reliable for agriculture.",
-    "rating": 4.9,
+    "review": "التربة الغنية ونظام الري الممتاز يجعل الإنتاج عالي الجودة.",
+    "rating": 4.7,
     "user": "687bdd348cc9eef33fbc5f5d",
-    "land": "687fe3ef5eb595210e399d19"
-  },
-
-  {
-    "review": "Tell Abyad offers excellent potential for irrigated farming and seasonal crops thanks to its Euphrates access.",
-    "rating": 5,
-    "user": "687bdd698cc9eef33fbc5f60",
-    "land": "687fe3ef5eb595210e399d1a"
+    "land": "68a91660d6cbe3603487883b"
   },
   {
-    "review": "Raqqa’s countryside near Tell Abyad is reviving rapidly, providing fertile and affordable farmland.",
-    "rating": 4.8,
-    "user": "687bdd348cc9eef33fbc5f5d",
-    "land": "687fe3ef5eb595210e399d1a"
+    "review": "إمكانية تحقيق عائد مستمر بفضل تنوع المحاصيل.",
+    "rating": 4,
+    "user": "687bdc528cc9eef33fbc5f48",
+    "land": "68a91660d6cbe3603487883b"
   },
-
   {
-    "review": "Bosra’s lands in Daraa are ideal for wheat and barley, with access to Jordanian markets nearby.",
-    "rating": 5,
+    "review": "بساتين واسعة تصلح لزراعة التفاح والخوخ والعنب، مكان مميز للاستثمار.",
+    "rating": 4.6,
     "user": "687bdcf58cc9eef33fbc5f58",
-    "land": "687fe3ef5eb595210e399d1b"
+    "land": "68a91660d6cbe3603487883c"
   },
   {
-    "review": "This strategic location near Bosra makes agricultural exports more accessible and profitable.",
-    "rating": 4.9,
+    "review": "سهولة الوصول والمناخ المعتدل يضمن إنتاج مستمر طوال الموسم.",
+    "rating": 5,
     "user": "687bdcdb8cc9eef33fbc5f55",
-    "land": "687fe3ef5eb595210e399d1b"
-  },
-
-  {
-    "review": "Masyaf’s green plains are excellent for sunflowers and seasonal crops, thanks to reliable irrigation.",
-    "rating": 5,
-    "user": "687bdcf58cc9eef33fbc5f58",
-    "land": "687fe3ef5eb595210e399d1c"
+    "land": "68a91660d6cbe3603487883c"
   },
   {
-    "review": "The surrounding infrastructure near Masyaf helps streamline logistics for agricultural production.",
-    "rating": 4.9,
-    "user": "687bdcdb8cc9eef33fbc5f55",
-    "land": "687fe3ef5eb595210e399d1c"
+    "review": "إمكانية توسيع المشروع وزراعة محاصيل جديدة بسهولة.",
+    "rating": 3.9,
+    "user": "687bdc348cc9eef33fbc5f45",
+    "land": "68a91660d6cbe3603487883c"
   },
-
   {
-    "review": "Baniyas in Tartus has a mild coastal climate ideal for citrus orchards and eco-agriculture.",
-    "rating": 5,
+    "review": "تلال خصبة مع كروم عالية الجودة، مناسبة للتصدير والإنتاج التجاري.",
+    "rating": 4.3,
     "user": "687bdcc08cc9eef33fbc5f52",
-    "land": "687fe3ef5eb595210e399d1d"
+    "land": "68a91660d6cbe3603487883d"
   },
   {
-    "review": "Access to Tartus port makes export of fruits and herbs from Baniyas easier and more profitable.",
-    "rating": 4.8,
-    "user": "687bdc8d8cc9eef33fbc5f4e",
-    "land": "687fe3ef5eb595210e399d1d"
-  },
-
-  {
-    "review": "Jableh's coastline provides tourism and farming fusion opportunities, especially for citrus and greenhouse vegetables.",
-    "rating": 5,
-    "user": "687bdcc08cc9eef33fbc5f52",
-    "land": "687fe3ef5eb595210e399d1e"
-  },
-  {
-    "review": "The land near Jableh is fertile and well-connected, ideal for both agriculture and tourism ventures.",
+    "review": "تلال خصبة مع كروم عالية الجودة، مناسبة للتصدير والإنتاج التجاري.",
     "rating": 4.9,
     "user": "687bdc8d8cc9eef33fbc5f4e",
-    "land": "687fe3ef5eb595210e399d1e"
+    "land": "68a91660d6cbe3603487883d"
   },
-
   {
-    "review": "Al Mayadin's access to the Euphrates supports productive farming with large-scale irrigation.",
+    "review": "الأرض جميلة جداً وزيتونها من أجود الأنواع.",
     "rating": 5,
-    "user": "687bdc528cc9eef33fbc5f48",
-    "land": "687fe3ef5eb595210e399d17"
+    "user": "68beaf195fa0efba5cb2ab6a",
+    "land": "68bed30d190bc82a1b10e87a"
   },
   {
-    "review": "Deir ez-Zor lands near Al Mayadin are ideal for rice, wheat, and vegetables with strong water access.",
-    "rating": 4.8,
-    "user": "687bdc6b8cc9eef33fbc5f4b",
-    "land": "687fe3ef5eb595210e399d17"
-  },
-
-  {
-    "review": "Al-Qadam near Damascus is an ideal spot for orchard farming, with stable water access and climate.",
-    "rating": 5,
-    "user": "687bdc528cc9eef33fbc5f48",
-    "land": "687fe3ef5eb595210e399d16"
-  },
-  {
-    "review": "The close proximity to Damascus markets offers fast distribution for fresh produce from Al-Qadam.",
+    "review":  "مزرعة عنب ممتازة والإنتاج وفير ومناسب للتصدير.",
     "rating": 4.9,
-    "user": "687bdc6b8cc9eef33fbc5f4b",
-    "land": "687fe3ef5eb595210e399d16"
+    "user": "68beaf505fa0efba5cb2ab6d",
+    "land": "68bed30d190bc82a1b10e87b"
+  },
+
+  {
+    "review": "تنوع المحاصيل هون بيفتح فرص استثمار رائعة.",
+    "rating": 4.7,
+    "user": "68beaf7d5fa0efba5cb2ab70",
+    "land": "68bed30d190bc82a1b10e87c"
+  },
+  {
+    "review": "تفاح المزرعة من ألذ وأجود الأنواع بريف دمشق.",
+    "rating": 4.8,
+    "user": "68beaf975fa0efba5cb2ab73",
+    "land": "68bed30d190bc82a1b10e87d"
+  },
+
+  {
+    "review": "الخضار طازجة وجودتها ممتازة بفضل البيوت البلاستيكية.",
+    "rating": 4.5,
+    "user": "68beafc75fa0efba5cb2ab77",
+    "land": "68bed30d190bc82a1b10e87e"
+  },
+  {
+    "review": "The mix of wheat, cabbage, and olives makes this estate highly profitable.",
+    "rating": 4.6,
+    "user": "70ac12ef45de67fa89bc1011",
+    "land": "68bed30d190bc82a1b10e87f"
+  },
+  {
+    "review": "Well-maintained olive farm with great potential for growth.",
+    "rating": 4.4,
+    "user": "70ac12ef45de67fa89bc1012",
+    "land": "68bed30d190bc82a1b10e880"
+  },
+  {
+    "review": "The vineyard produces high-quality grapes, perfect for local and international markets.",
+    "rating": 5,
+    "user": "70ac12ef45de67fa89bc1013",
+    "land": "68bed30d190bc82a1b10e881"
+  },
+  {
+    "review": "Spacious land ideal for grain farming with strong returns.",
+    "rating": 4.2,
+    "user": "70ac12ef45de67fa89bc1014",
+    "land": "68bed30d190bc82a1b10e882"
+  },
+  {
+    "review": "The orchard is rich with apples and cherries, a true gem in the mountains.",
+    "rating": 4,
+    "user": "70ac12ef45de67fa89bc1015",
+    "land": "68bed30d190bc82a1b10e883"
+  },
+  {
+    "review": "أرض واسعة ومثمرة، مناسبة للاستثمار الزراعي وإنتاج القمح بكفاءة عالية.",
+    "rating": 5,
+    "user": "70ac12ef45de67fa89bc1016",
+    "land": "68bff351e574ddcc4ef5b874"
+  },
+  {
+    "review": "مزرعة خضروات ممتازة، نظام الري الحديث يجعل الإنتاج مريح ومنتظم.",
+    "rating": 4.6,
+    "user": "70ac12ef45de67fa89bc1017",
+    "land": "68bff351e574ddcc4ef5b876"
+  },
+  {
+    "review": "مزرعة متنوعة، تجمع بين القمح والزيتون والخضروات الموسمية، مثالية للاستثمار الطويل.",
+    "rating": 4.9,
+    "user": "70ac12ef45de67fa89bc1018",
+    "land": "68bff351e574ddcc4ef5b878"
+  },
+  {
+    "review": "مزرعة أعشاب عضوية رائعة، مثالية لزراعة الزعتر وإكليل الجبل بجودة عالية.",
+    "rating": 4.2,
+    "user": "70ac12ef45de67fa89bc1019",
+    "land": "68bff351e574ddcc4ef5b87c"
+  },
+  {
+    "review": "مزرعة نخيل متطورة في الصحراء، إنتاجية ممتازة ومقاومة للجفاف، فرصة ذهبية للاستثمار.",
+    "rating": 4.3,
+    "user": "70ac12ef45de67fa89bc1020",
+    "land": "68bff351e574ddcc4ef5b87d"
   }
 ]

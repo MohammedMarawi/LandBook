@@ -1,15 +1,16 @@
 [
   {
-    "firstName": "Aya",
+    "_id": "68a91660d6cbe3603487883b",
+    "firstName": "Ali",
     "lastName": "Attar",
-    "gender": "female",
-    "email": "aya.attar@example.com",
+    "gender": "male",
+    "email": "ali.attar@gmail.com",
     "phone": {
       "areaCode": "+963",
       "number": "998877665"
     },
     "city": "Aleppo",
-    "userPhoto": "https://example.com/photos/aya.jpg",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757552297/users/ukezfo97jqh3eusngzr7.jpg",
     "idPhoto": "https://example.com/id/aya.jpg",
     "ownershipPhoto": "https://example.com/ownership/aya_land.jpg",
     "title": "Fertile Green Fields of Aleppo",
@@ -59,22 +60,27 @@
       "village": "Azaz"
     },
     "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757321745/lands/qdrm0f3rrefapofajxrc.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757321560/lands/xtiezm1ldcrpdokhukud.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757321562/lands/vvjzjhcajp0obpofiuay.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757321567/lands/tcrsdgdkpqejuuukfm40.jpg",
       "https://res.cloudinary.com/dc57rhb7w/image/upload/v1755910769/lands/pnbjlnrfu7mfby8dpkli.png"
     ],
     "isApproved": "approved",
-    "status": "reserved"
+    "status": "available"
   },
   {
-    "firstName": "Nour",
+    "_id": "68a91660d6cbe3603487883c",
+    "firstName": "Nouar",
     "lastName": "Alsabaa",
-    "gender": "female",
-    "email": "Nour.Alsabaa@example.com",
+    "gender": "male",
+    "email": "nouar.alsabaa@gmail.com",
     "phone": {
       "areaCode": "+963",
       "number": "995544332"
     },
     "city": "Homs",
-    "userPhoto": "https://example.com/photos/nour.jpg",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757552298/users/yfwbse7nhwjhwymontc6.jpg",
     "idPhoto": "https://example.com/id/nour.jpg",
     "ownershipPhoto": "https://example.com/ownership/nour_land.jpg",
     "title": "Sunny Orchards of Homs",
@@ -123,22 +129,28 @@
       "village": "Talkalakh"
     },
     "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757328661/lands/ef7niwbd2fnn7irffoy5.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757328703/lands/qjra94s5hpngky55b3l1.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757328758/lands/f1reyygdytzhw8sgxtqa.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757328835/lands/iz5bg2jqlpqqo0wi1tcl.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757328876/lands/hhbwe81cqqp4daxvdzrh.jpg",
       "https://res.cloudinary.com/dc57rhb7w/image/upload/v1755911010/lands/rtmwsza05de11x0fyivc.jpg"
     ],
     "isApproved": "approved",
-    "status": "reserved"
+    "status": "available"
   },
   {
-    "firstName": "Rayyan",
+    "_id": "68a91660d6cbe3603487883d",
+    "firstName": "Ramez",
     "lastName": "Nattoura",
-    "gender": "female",
-    "email": "rayyan.nattoura@example.com",
+    "gender": "male",
+    "email": "ramez.nattoura@gmail.com",
     "phone": {
       "areaCode": "+963",
       "number": "991122334"
     },
     "city": "Idlib",
-    "userPhoto": "https://example.com/photos/rayyan.jpg",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757552299/users/mrb1laffgizyij8aayk3.jpg",
     "idPhoto": "https://example.com/id/rayyan.jpg",
     "ownershipPhoto": "https://example.com/ownership/rayyan_land.jpg",
     "title": "Fertile Hills of Idlib",
@@ -184,22 +196,27 @@
       "village": "Maaret Tamsrin"
     },
     "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757328931/lands/fy1twqpvqgmszfpfbuoj.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757328974/lands/jahfmw0obohsc2mrg2qw.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757328995/lands/flwry7ucbvzcmlkm8ujt.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757329039/lands/lrpzklagq0r0fpneqzjd.jpg",
       "https://res.cloudinary.com/dc57rhb7w/image/upload/v1755911012/lands/grt4e33zfshyv9hfxysd.jpg"
     ],
     "isApproved": "approved",
-    "status": "reserved"
+    "status": "available"
   },
   {
+    "_id": "68a91660d6cbe3603487883e",
     "firstName": "Mohammed",
     "lastName": "Maarawi",
     "gender": "male",
-    "email": "Mohammed.Maarawi@example.com",
+    "email": "mohammed.maarawi@gmail.com",
     "phone": {
       "areaCode": "+963",
       "number": "990011223"
     },
     "city": "Raqqa",
-    "userPhoto": "https://example.com/photos/mohammed.jpg",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757552300/users/nl9mvkinoyssdcso0kxw.jpg",
     "idPhoto": "https://example.com/id/mohammed.jpg",
     "ownershipPhoto": "https://example.com/ownership/mohammed_land.jpg",
     "title": "Golden Plains of Raqqa",
@@ -245,22 +262,27 @@
       "village": "Tell Abyad"
     },
     "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757329105/lands/a9adfh6caz817s19suct.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757329136/lands/lwchtpockcuzlvxvnggf.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757329198/lands/xbro100hydvjmqnn5xnx.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757329318/lands/qv8dqyo0kth9n0ajsdhf.jpg",
       "https://res.cloudinary.com/dc57rhb7w/image/upload/v1755911014/lands/bxwzhtw4ckiyisljbncl.jpg"
     ],
     "isApproved": "approved",
-    "status": "reserved"
+    "status": "available"
   },
   {
+    "_id": "68a91660d6cbe3603487883f",
     "firstName": "Mohammed",
     "lastName": "Jarjoumi",
     "gender": "male",
-    "email": "Mohammed.Jarjoumi@example.com",
+    "email": "mohammed.jarjoumi@gmail.com",
     "phone": {
       "areaCode": "+963",
       "number": "997755331"
     },
     "city": "Daraa",
-    "userPhoto": "https://example.com/photos/mohammedJar.jpg",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757552301/users/zmvhta35misizuulsenv.jpg",
     "idPhoto": "https://example.com/id/mohammedJar.jpg",
     "ownershipPhoto": "https://example.com/ownership/mohammedJar_land.jpg",
     "title": "Fertile Farms of Daraa",
@@ -310,22 +332,28 @@
       "village": "Bosra"
     },
     "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757329363/lands/kzcxyehc7xsqc7nrtqyx.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757329429/lands/igz59m0dkgusbao0lzjp.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757329484/lands/dtzaijd2sirw5hwhr8hi.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757329533/lands/nvtazg579chzd1pqnohg.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757329606/lands/repdt5qolycb6tfy2cyd.jpg",
       "https://res.cloudinary.com/dc57rhb7w/image/upload/v1755911016/lands/jvocvlipyeup8u30fzpz.jpg"
     ],
     "isApproved": "approved",
-    "status": "reserved"
+    "status": "available"
   },
   {
-    "firstName": "Natheer",
+    "_id": "68a91660d6cbe36034878840",
+    "firstName": "Basheer",
     "lastName": "Ayyan",
     "gender": "male",
-    "email": "Natheer.Ayyan@example.com",
+    "email": "Basheer.Ayyan@gmail.com",
     "phone": {
       "areaCode": "+963",
       "number": "994433221"
     },
     "city": "Hama",
-    "userPhoto": "https://example.com/photos/natheer.jpg",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757552302/users/xgffuvhfinazotlwa2je.jpg",
     "idPhoto": "https://example.com/id/natheer.jpg",
     "ownershipPhoto": "https://example.com/ownership/natheer_land.jpg",
     "title": "Green Valleys of Hama",
@@ -374,22 +402,27 @@
       "village": "Masyaf"
     },
     "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757329666/lands/bzxrmmv0xxf53pczoxs5.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757329734/lands/umhkyxrmzsmgp8htvyt3.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757329894/lands/hquaafesrr3fgljbwnki.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757329965/lands/hz6qww5v9gn7fy9dilxb.jpg",
       "https://res.cloudinary.com/dc57rhb7w/image/upload/v1755911017/lands/mhq4xklqblvvvad3twob.jpg"
     ],
     "isApproved": "approved",
-    "status": "reserved"
+    "status": "available"
   },
   {
+    "_id": "68a91660d6cbe36034878841",
     "firstName": "Abd AlGhani",
     "lastName": "Habrah",
     "gender": "male",
-    "email": "Abd_AlGhani.Habrah@example.com",
+    "email": "Abd_AlGhani.Habrah@gmail.com",
     "phone": {
       "areaCode": "+963",
       "number": "993322110"
     },
     "city": "Tartus",
-    "userPhoto": "https://example.com/photos/abd_alGhani.jpg",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757552303/users/ygfc8lnzguqdbezcjcq4.jpg",
     "idPhoto": "https://example.com/id/abd_alGhani.jpg",
     "ownershipPhoto": "https://example.com/ownership/abd_alGhani_land.jpg",
     "title": "Coastal Farmlands of Tartus",
@@ -436,22 +469,27 @@
       "village": "Baniyas"
     },
     "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757334547/lands/jyrbxr6n4rvaggaqsylt.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757334674/lands/kjjcgdpwpcnvlvsd9sgm.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757334746/lands/megzcqz5wi1cru9zumfg.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757334851/lands/jbrnanuwykkjmcuhx0go.jpg",
       "https://res.cloudinary.com/dc57rhb7w/image/upload/v1755911019/lands/kn5whebfctvkjtwaja0m.jpg"
     ],
     "isApproved": "approved",
-    "status": "reserved"
+    "status": "available"
   },
   {
+    "_id": "68a91660d6cbe36034878842",
     "firstName": "Manhal",
     "lastName": "Sarhan",
     "gender": "male",
-    "email": "Manhal.Sarhan@example.com",
+    "email": "Manhal.Sarhan@gmail.com",
     "phone": {
       "areaCode": "+963",
       "number": "996677889"
     },
     "city": "Latakia",
-    "userPhoto": "https://example.com/photos/manhal.jpg",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757552303/users/iryr5gdtwo7vmpq4rtoi.jpg",
     "idPhoto": "https://example.com/id/manhal.jpg",
     "ownershipPhoto": "https://example.com/ownership/manhal_land.jpg",
     "title": "Lush Terraces of Latakia",
@@ -498,22 +536,27 @@
       "village": "Jableh"
     },
     "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757333523/lands/f64vhtxevamioeiqlwab.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757333647/lands/d0wwrfi89cxsqfhrhrzc.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757333782/lands/vhpqojhjeb0gnkdevzjs.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757333853/lands/hxdgpzvt5jzdm38ixkhp.jpg",
       "https://res.cloudinary.com/dc57rhb7w/image/upload/v1755911020/lands/q4fmzyomhtvmyui5c1nf.jpg"
     ],
     "isApproved": "approved",
-    "status": "reserved"
+    "status": "available"
   },
   {
+    "_id": "68a91660d6cbe36034878843",
     "firstName": "Atef",
     "lastName": "Ghayad",
     "gender": "male",
-    "email": "Atef.Ghayad@example.com",
+    "email": "Atef.Ghayad@gmail.com",
     "phone": {
       "areaCode": "+963",
       "number": "994455667"
     },
     "city": "Deir ez-Zor",
-    "userPhoto": "https://example.com/photos/atef.jpg",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757552304/users/i4rr4l47i2qi0scfct7f.jpg",
     "idPhoto": "https://example.com/id/atef.jpg",
     "ownershipPhoto": "https://example.com/ownership/atef_land.jpg",
     "title": "Fertile Riverbanks of Deir ez-Zor",
@@ -560,22 +603,26 @@
       "village": "Al Mayadin"
     },
     "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757332731/lands/iqxuvidf139wngbul6pf.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757332828/lands/jtniqewwn9uvvzelj472.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757332923/lands/crrw7e1tw0acxootkkjn.jpg",
       "https://res.cloudinary.com/dc57rhb7w/image/upload/v1755911022/lands/lq3oidr9aox0bp2fimd7.jpg"
     ],
     "isApproved": "approved",
-    "status": "reserved"
+    "status": "available"
   },
   {
-    "firstName": "Zakariya",
-    "lastName": "Jourieh",
+    "_id": "68a91660d6cbe36034878844",
+    "firstName": "Taha",
+    "lastName": "AlHalak",
     "gender": "male",
-    "email": "Zakariya.Jourieh@example.com",
+    "email": "taha.alhalak@gmail.com",
     "phone": {
       "areaCode": "+963",
       "number": "993311223"
     },
     "city": "Damascus",
-    "userPhoto": "https://example.com/photos/zakariya.jpg",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757552305/users/kwybtyubtt7ybbh1tn7z.jpg",
     "idPhoto": "https://example.com/id/zakariya.jpg",
     "ownershipPhoto": "https://example.com/ownership/zakariya_land.jpg",
     "title": "Damascus Valley Orchards",
@@ -622,7 +669,1282 @@
       "village": "Al-Qadam"
     },
     "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757331931/lands/lphswxeccljxswx4oifh.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757331965/lands/gihywwipclqzxwmoytvi.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757332220/lands/vg2geuo18mtkikkv2eqt.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757331591/lands/dqb6kagcnehvx6gk3qsc.jpg",
       "https://res.cloudinary.com/dc57rhb7w/image/upload/v1755911025/lands/fleebvvnjpokqijjk7at.jpg"
+    ],
+    "isApproved": "approved",
+    "status": "available"
+  },
+  {
+    "firstName": "Omar",
+    "lastName": "Hassan",
+    "gender": "male",
+    "email": "omar.hassan@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "944556677"
+    },
+    "city": "Damascus",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553236/users/ptjpq2hawltcwkuyzsuy.jpg",
+    "idPhoto": "https://example.com/id/omar.jpg",
+    "ownershipPhoto": "https://example.com/ownership/omar_land.jpg",
+    "title": "Yabroud Olive Farm",
+    "area": 60,
+    "price": 120000,
+    "ratingsAverage": 4.7,
+    "ratingsQuantity": 5,
+    "description": "Olive farm with fertile soil and traditional irrigation system. Ideal for investors.",
+    "currentCrop": [
+      "Olives"
+    ],
+    "treeAge": 12,
+    "workersNumber": 4,
+    "equipments": [
+      "Plough",
+      "Tractor"
+    ],
+    "waterSource": [
+      "Well"
+    ],
+    "averageRainfall": 380,
+    "irrigationMethods": [
+      "Drip"
+    ],
+    "soilTypes": [
+      "Loamy"
+    ],
+    "suitableCrops": [
+      "Olives",
+      "Wheat"
+    ],
+    "climateDescription": "Mediterranean climate with mild winters and warm summers.",
+    "estimatedReturns": "15000 USD per season",
+    "contractDuration": "6 Months",
+    "location": {
+      "coordinates": [
+        36.6578,
+        33.9712
+      ],
+      "address": "Yabroud countryside, Damascus",
+      "village": "Yabroud"
+    },
+    "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553370/lands/g6mud76z79tqd8fkc7vl.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553373/lands/trxrwg0l2vzlq3l6kbrs.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553375/lands/qkex5xqmpmczpahwnijs.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553376/lands/dfrcafo6mp1o3qsrbugr.jpg"
+    ],
+    "isApproved": "approved",
+    "status": "reserved"
+  },
+  {
+    "firstName": "Ibrahim",
+    "lastName": "Sabbagh",
+    "gender": "male",
+    "email": "ibrahim.sabbagh@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "933224466"
+    },
+    "city": "Damascus",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553237/users/bxmhreve1iclqhotyje5.jpg",
+    "idPhoto": "https://example.com/id/rania.jpg",
+    "ownershipPhoto": "https://example.com/ownership/rania_land.jpg",
+    "title": "Yabroud Vineyard Estate",
+    "area": 80,
+    "price": 180000,
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 3,
+    "description": "Expansive vineyard with modern irrigation, perfect for wine production.",
+    "currentCrop": [
+      "Grapes"
+    ],
+    "treeAge": 8,
+    "workersNumber": 6,
+    "equipments": [
+      "Harvester",
+      "Sprayer"
+    ],
+    "waterSource": [
+      "Spring",
+      "Rainwater"
+    ],
+    "averageRainfall": 420,
+    "irrigationMethods": [
+      "Sprinkler"
+    ],
+    "soilTypes": [
+      "Clay",
+      "Silty"
+    ],
+    "suitableCrops": [
+      "Grapes",
+      "Olives"
+    ],
+    "climateDescription": "Cool climate ideal for vineyards, with balanced humidity.",
+    "estimatedReturns": "20000 USD per season",
+    "contractDuration": "12 Months",
+    "location": {
+      "coordinates": [
+        36.66,
+        33.975
+      ],
+      "address": "West of Yabroud, Damascus",
+      "village": "Yabroud"
+    },
+    "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553377/lands/u0jll4a9jnkjb3zqztmq.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553378/lands/aa6kjywhaoh56uyu8aaq.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553380/lands/bs0jkyvqzhpriw3y5lbl.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553381/lands/vtaqxf0apgiccgfzmhnz.jpg"
+    ],
+    "isApproved": "approved",
+    "status": "reserved"
+  },
+  {
+    "firstName": "Samir",
+    "lastName": "Darwish",
+    "gender": "male",
+    "email": "samir.darwish@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "955667788"
+    },
+    "city": "Damascus",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553238/users/yqakyez0w0iasybflnmy.jpg",
+    "idPhoto": "https://example.com/id/samir.jpg",
+    "ownershipPhoto": "https://example.com/ownership/samir_land.jpg",
+    "title": "Yabroud Mixed Crops Farm",
+    "area": 70,
+    "price": 150000,
+    "ratingsAverage": 4.6,
+    "ratingsQuantity": 4,
+    "description": "Farm with diverse crops and irrigation systems, suitable for investment.",
+    "currentCrop": [
+      "Wheat",
+      "Olives",
+      "Vegetables"
+    ],
+    "treeAge": 10,
+    "workersNumber": 5,
+    "equipments": [
+      "Tractor",
+      "Seeder",
+      "Sprayer"
+    ],
+    "waterSource": [
+      "Irrigation system"
+    ],
+    "averageRainfall": 300,
+    "irrigationMethods": [
+      "Drip",
+      "Sprinkler"
+    ],
+    "soilTypes": [
+      "Loamy",
+      "Clay"
+    ],
+    "suitableCrops": [
+      "Wheat",
+      "Vegetables",
+      "Olives"
+    ],
+    "climateDescription": "Semi-arid climate with sufficient water supply for multiple crops.",
+    "estimatedReturns": "18000 USD per season",
+    "contractDuration": "8 Months",
+    "location": {
+      "coordinates": [
+        36.655,
+        33.968
+      ],
+      "address": "East Yabroud, Damascus",
+      "village": "Yabroud"
+    },
+    "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553382/lands/im3hmrmlsgya3jo6qcxo.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553383/lands/fbqge9izvhbyub70yieo.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553384/lands/v99p6uelh6mzsflusnr5.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553385/lands/p3m4sfhb9rl7nv0v9anz.jpg"
+    ],
+    "isApproved": "approved",
+    "status": "reserved"
+  },
+  {
+    "firstName": "Moussa",
+    "lastName": "Haddad",
+    "gender": "male",
+    "email": "moussa.haddad@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "944112299"
+    },
+    "city": "Damascus",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553238/users/avthayhnaijcqttkpoao.jpg",
+    "idPhoto": "https://example.com/id/lina.jpg",
+    "ownershipPhoto": "https://example.com/ownership/lina_land.jpg",
+    "title": "Yabroud Apple Orchard",
+    "area": 100,
+    "price": 200000,
+    "ratingsAverage": 4.9,
+    "ratingsQuantity": 6,
+    "description": "Apple orchard in Yabroud mountains, with fresh climate and good water supply.",
+    "currentCrop": [
+      "Apples"
+    ],
+    "treeAge": 7,
+    "workersNumber": 3,
+    "equipments": [
+      "Pruner",
+      "Sprayer"
+    ],
+    "waterSource": [
+      "Spring"
+    ],
+    "averageRainfall": 500,
+    "irrigationMethods": [
+      "Drip"
+    ],
+    "soilTypes": [
+      "Sandy loam"
+    ],
+    "suitableCrops": [
+      "Apples",
+      "Grapes"
+    ],
+    "climateDescription": "Mountainous climate, suitable for fruit orchards.",
+    "estimatedReturns": "13000 USD per season",
+    "contractDuration": "7 Months",
+    "location": {
+      "coordinates": [
+        36.642,
+        33.962
+      ],
+      "address": "South Yabroud, Damascus",
+      "village": "Yabroud"
+    },
+    "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553386/lands/iv2c2v07eromleucxmod.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553389/lands/vfu9omzqzwd9tnrpwctk.png",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553389/lands/c4kroegbcgixbqucqggd.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553390/lands/actjsytdcgnoqq3yecqt.jpg"
+    ],
+    "isApproved": "approved",
+    "status": "available"
+  },
+  {
+    "firstName": "Khaled",
+    "lastName": "Mansour",
+    "gender": "male",
+    "email": "khaled.mansour@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "966778899"
+    },
+    "city": "Damascus",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553239/users/zr9z5brz9vwdjfylef1y.jpg",
+    "idPhoto": "https://example.com/id/khaled.jpg",
+    "ownershipPhoto": "https://example.com/ownership/khaled_land.jpg",
+    "title": "Yabroud Vegetable Greenhouse",
+    "area": 50,
+    "price": 100000,
+    "ratingsAverage": 4.5,
+    "ratingsQuantity": 2,
+    "description": "Greenhouse farm for vegetables with drip irrigation system.",
+    "currentCrop": [
+      "Tomatoes",
+      "Cucumbers"
+    ],
+    "treeAge": 45,
+    "workersNumber": 4,
+    "equipments": [
+      "Irrigation pumps",
+      "Sprayer"
+    ],
+    "waterSource": [
+      "Well"
+    ],
+    "averageRainfall": 420,
+    "irrigationMethods": [
+      "Drip"
+    ],
+    "soilTypes": [
+      "Silty"
+    ],
+    "suitableCrops": [
+      "Vegetables"
+    ],
+    "climateDescription": "Warm summers and cool winters, ideal for greenhouse farming.",
+    "estimatedReturns": "10000 USD per season",
+    "contractDuration": "6 Months",
+    "location": {
+      "coordinates": [
+        36.648,
+        33.9655
+      ],
+      "address": "Central Yabroud, Damascus",
+      "village": "Yabroud"
+    },
+    "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553391/lands/zdmglk0xfi9espuxnq00.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553393/lands/ca2om9j7uvh83crkqfh2.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553394/lands/nbvef1pmx8klztargpq5.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553395/lands/pbryi4bkjikldmxpvxnz.jpg"
+    ],
+    "isApproved": "approved",
+    "status": "available"
+  },
+  {
+    "firstName": "Sagged",
+    "lastName": "Salem",
+    "gender": "male",
+    "email": "sagged.salem@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "955334455"
+    },
+    "city": "Damascus",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553240/users/yywqexna1ndi3jjskgyl.jpg",
+    "idPhoto": "https://example.com/id/hiba.jpg",
+    "ownershipPhoto": "https://example.com/ownership/hiba_land.jpg",
+    "title": "Yabroud Mixed Crops Estate",
+    "area": 90,
+    "price": 190000,
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 7,
+    "description": "Large estate with wheat, vegetables, and olive trees, equipped with irrigation.",
+    "currentCrop": [
+      "Wheat",
+      "Cabbage",
+      "Olives"
+    ],
+    "treeAge": 9,
+    "workersNumber": 7,
+    "equipments": [
+      "Tractor",
+      "Seeder",
+      "Plough"
+    ],
+    "waterSource": [
+      "Irrigation system"
+    ],
+    "averageRainfall": 310,
+    "irrigationMethods": [
+      "Sprinkler"
+    ],
+    "soilTypes": [
+      "Clay loam"
+    ],
+    "suitableCrops": [
+      "Wheat",
+      "Vegetables",
+      "Olives"
+    ],
+    "climateDescription": "Semi-arid climate with sufficient rainfall for diverse crops.",
+    "estimatedReturns": "22000 USD per season",
+    "contractDuration": "10 Months",
+    "location": {
+      "coordinates": [
+        36.6522,
+        33.97
+      ],
+      "address": "East of Yabroud, Damascus",
+      "village": "Yabroud"
+    },
+    "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553397/lands/hnaue3q8rndonsoc2tkf.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553398/lands/o9qjo9qgx25omecmlpnt.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553400/lands/vezyfps4xxkfszlanccl.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553401/lands/ce9t1j5ixdpnkext3rqw.jpg"
+    ],
+    "isApproved": "approved",
+    "status": "available"
+  },
+  {
+    "firstName": "Maher",
+    "lastName": "Sawan",
+    "gender": "male",
+    "email": "maher.sawan@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "944112233"
+    },
+    "city": "Damascus",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553240/users/v778b0gwzqkvzyveabec.jpg",
+    "idPhoto": "https://example.com/id/maher.jpg",
+    "ownershipPhoto": "https://example.com/ownership/maher_land.jpg",
+    "title": "Olive Farm in Douma",
+    "area": 40,
+    "price": 140000,
+    "ratingsAverage": 4.6,
+    "ratingsQuantity": 3,
+    "description": "Medium olive farm with good irrigation and access to main road.",
+    "currentCrop": [
+      "Olives"
+    ],
+    "treeAge": 15,
+    "workersNumber": 5,
+    "equipments": [
+      "Tractor",
+      "Sprayer"
+    ],
+    "waterSource": [
+      "Well"
+    ],
+    "averageRainfall": 350,
+    "irrigationMethods": [
+      "Drip"
+    ],
+    "soilTypes": [
+      "Loamy"
+    ],
+    "suitableCrops": [
+      "Olives",
+      "Wheat"
+    ],
+    "climateDescription": "Mediterranean climate with moderate winters and warm summers.",
+    "estimatedReturns": "17000 USD per season",
+    "contractDuration": "6 Months",
+    "location": {
+      "coordinates": [
+        36.402,
+        33.5722
+      ],
+      "address": "Countryside of Douma, Damascus",
+      "village": "Douma"
+    },
+    "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553402/lands/fyq2tytdluu1cpeeuamk.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553403/lands/upqiethjautcgenlu3fk.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553404/lands/vrqqnudx9vg9gubjlyik.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553405/lands/cvzgd2zmg0hwnkj5tru7.jpg"
+    ],
+    "isApproved": "approved",
+    "status": "available"
+  },
+  {
+    "firstName": "Nour",
+    "lastName": "Shami",
+    "gender": "male",
+    "email": "nour.shami@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "933445566"
+    },
+    "city": "Damascus",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553241/users/nhhqy5egijkc1wp7hhba.jpg",
+    "idPhoto": "https://example.com/id/nour.jpg",
+    "ownershipPhoto": "https://example.com/ownership/nour_land.jpg",
+    "title": "Vineyard in Darayya",
+    "area": 55,
+    "price": 180000,
+    "ratingsAverage": 4.9,
+    "ratingsQuantity": 4,
+    "description": "Vineyard with fertile soil and high-quality grape production.",
+    "currentCrop": [
+      "Grapes"
+    ],
+    "treeAge": 9,
+    "workersNumber": 6,
+    "equipments": [
+      "Harvester",
+      "Plough"
+    ],
+    "waterSource": [
+      "Spring",
+      "Rainwater"
+    ],
+    "averageRainfall": 420,
+    "irrigationMethods": [
+      "Sprinkler"
+    ],
+    "soilTypes": [
+      "Silty",
+      "Clay"
+    ],
+    "suitableCrops": [
+      "Grapes",
+      "Fruits"
+    ],
+    "climateDescription": "Cool and humid, perfect for vineyards.",
+    "estimatedReturns": "20000 USD per season",
+    "contractDuration": "12 Months",
+    "location": {
+      "coordinates": [
+        36.24,
+        33.4575
+      ],
+      "address": "Darayya Countryside, Damascus",
+      "village": "Darayya"
+    },
+    "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553406/lands/tjmni11n3wnzfmihlslg.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553406/lands/bixt0zceaouirqxpnqo6.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553408/lands/sypm1ryrnhl79d5pupcd.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553408/lands/tk4iitpjedvjz8u7krap.jpg"
+    ],
+    "isApproved": "approved",
+    "status": "available"
+  },
+  {
+    "firstName": "Yousef",
+    "lastName": "Fares",
+    "gender": "male",
+    "email": "yousef.fares@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "955998877"
+    },
+    "city": "Damascus",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553242/users/h2vj2486pgmmxd8euliz.jpg",
+    "idPhoto": "https://example.com/id/yousef.jpg",
+    "ownershipPhoto": "https://example.com/ownership/yousef_land.jpg",
+    "title": "Wheat and Barley Farm in Al-Tall",
+    "area": 90,
+    "price": 200000,
+    "ratingsAverage": 4.5,
+    "ratingsQuantity": 5,
+    "description": "Large flat farm suitable for wheat and barley production.",
+    "currentCrop": [
+      "Wheat",
+      "Barley"
+    ],
+    "treeAge": 20,
+    "workersNumber": 8,
+    "equipments": [
+      "Seeder",
+      "Tractor"
+    ],
+    "waterSource": [
+      "Irrigation system"
+    ],
+    "averageRainfall": 280,
+    "irrigationMethods": [
+      "Flood",
+      "Sprinkler"
+    ],
+    "soilTypes": [
+      "Clay loam"
+    ],
+    "suitableCrops": [
+      "Wheat",
+      "Barley",
+      "Vegetables"
+    ],
+    "climateDescription": "Semi-arid climate, ideal for grains.",
+    "estimatedReturns": "25000 USD per season",
+    "contractDuration": "8 Months",
+    "location": {
+      "coordinates": [
+        36.33,
+        33.61
+      ],
+      "address": "Al-Tall countryside, Damascus",
+      "village": "Al-Tall"
+    },
+    "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553409/lands/xh4krm6ck4v7ys16odcm.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553410/lands/c3stzduq1yxkhhxbaemj.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553411/lands/iqsc8yasld2ecahn3rtd.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553412/lands/yiggfr7p76sa01l2sa0g.jpg"
+    ],
+    "isApproved": "approved",
+    "status": "reserved"
+  },
+  {
+    "firstName": "Ahmad",
+    "lastName": "Kattan",
+    "gender": "male",
+    "email": "ahmad.kattan@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "966112233"
+    },
+    "city": "Damascus",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553243/users/mpvqhftvmesja9uv98ei.jpg",
+    "idPhoto": "https://example.com/id/salma.jpg",
+    "ownershipPhoto": "https://example.com/ownership/salma_land.jpg",
+    "title": "Fruit Orchard in Al-Zabadani",
+    "area": 65,
+    "price": 175000,
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 6,
+    "description": "Fruit orchard with apples, cherries, and peaches. Mountain climate ensures high quality.",
+    "currentCrop": [
+      "Apples",
+      "Cherries",
+      "Peaches"
+    ],
+    "treeAge": 11,
+    "workersNumber": 7,
+    "equipments": [
+      "Pruner",
+      "Harvester",
+      "Sprayer"
+    ],
+    "waterSource": [
+      "River",
+      "Rainwater"
+    ],
+    "averageRainfall": 600,
+    "irrigationMethods": [
+      "Drip",
+      "Sprinkler"
+    ],
+    "soilTypes": [
+      "Sandy loam"
+    ],
+    "suitableCrops": [
+      "Fruits",
+      "Vegetables"
+    ],
+    "climateDescription": "Mountainous, cool summers and snowy winters, ideal for orchards.",
+    "estimatedReturns": "22000 USD per season",
+    "contractDuration": "10 Months",
+    "location": {
+      "coordinates": [
+        36.1,
+        33.732
+      ],
+      "address": "Countryside of Al-Zabadani, Damascus",
+      "village": "Al-Zabadani"
+    },
+    "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553412/lands/wcjk1efdkluyazcsfx8g.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553413/lands/ar5nfpdsramgntgcsdax.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553414/lands/xpknndzhrcbwbkijjpbo.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553415/lands/uk8a20cxbqzgggdrinzb.jpg"
+    ],
+    "isApproved": "approved",
+    "status": "reserved"
+  },
+  {
+    "firstName": "Maher",
+    "lastName": "Saleh",
+    "gender": "male",
+    "email": "maher.saleh@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "933445566"
+    },
+    "city": "Homs",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553246/users/jlti3pa64i8hhgu6wuhm.webp",
+    "idPhoto": "https://example.com/id/maher.jpg",
+    "ownershipPhoto": "https://example.com/ownership/maher_land.jpg",
+    "title": "Al-Rastan Wheat Fields",
+    "area": 70,
+    "price": 140000,
+    "ratingsAverage": 4.6,
+    "ratingsQuantity": 3,
+    "description": "Large fertile wheat fields, with modern irrigation system installed.",
+    "currentCrop": [
+      "Wheat"
+    ],
+    "treeAge": 33,
+    "workersNumber": 6,
+    "equipments": [
+      "Seeder",
+      "Tractor"
+    ],
+    "waterSource": [
+      "Irrigation system"
+    ],
+    "averageRainfall": 300,
+    "irrigationMethods": [
+      "Sprinkler"
+    ],
+    "soilTypes": [
+      "Clay loam"
+    ],
+    "suitableCrops": [
+      "Wheat",
+      "Barley"
+    ],
+    "climateDescription": "Semi-arid climate, ideal for grain farming.",
+    "estimatedReturns": "18000 USD per season",
+    "contractDuration": "8 Months",
+    "location": {
+      "coordinates": [
+        36.74,
+        34.92
+      ],
+      "address": "Al-Rastan countryside, Homs",
+      "village": "Al-Rastan"
+    },
+    "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553416/lands/tehwjlrrzmcujrs9g5pm.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553417/lands/bjqvfam3z1slcrcwvbop.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553417/lands/yc5h9dfpwrkozq6nenlw.jpg"
+    ],
+    "isApproved": "approved",
+    "status": "reserved"
+  },
+  {
+    "firstName": "Noura",
+    "lastName": "Akram",
+    "gender": "female",
+    "email": "noura.akram@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "944223355"
+    },
+    "city": "Homs",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553247/users/czn54x1v39fnxrdyxa5m.jpg",
+    "idPhoto": "https://example.com/id/noura.jpg",
+    "ownershipPhoto": "https://example.com/ownership/noura_land.jpg",
+    "title": "Al-Rastan Olive Grove",
+    "area": 50,
+    "price": 125000,
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 5,
+    "description": "Olive grove with productive trees, suitable for oil production.",
+    "currentCrop": [
+      "Olives"
+    ],
+    "treeAge": 15,
+    "workersNumber": 4,
+    "equipments": [
+      "Pruner",
+      "Sprayer"
+    ],
+    "waterSource": [
+      "Well"
+    ],
+    "averageRainfall": 320,
+    "irrigationMethods": [
+      "Drip"
+    ],
+    "soilTypes": [
+      "Loamy"
+    ],
+    "suitableCrops": [
+      "Olives",
+      "Wheat"
+    ],
+    "climateDescription": "Mediterranean climate, suitable for olive farming.",
+    "estimatedReturns": "16000 USD per season",
+    "contractDuration": "6 Months",
+    "location": {
+      "coordinates": [
+        36.75,
+        34.93
+      ],
+      "address": "Al-Rastan olive area, Homs",
+      "village": "Al-Rastan"
+    },
+    "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553418/lands/e1u8b0kij0lss4hlrffd.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553419/lands/izvwzr5v1tgv9jg4tnay.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553420/lands/wgrfcgjjx3mzvjfsa4ka.jpg"
+    ],
+    "isApproved": "approved",
+    "status": "available"
+  },
+  {
+    "firstName": "Tarek",
+    "lastName": "Jaber",
+    "gender": "male",
+    "email": "tarek.jaber@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "955667799"
+    },
+    "city": "Homs",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553248/users/bggrrhwqwiu5v0f5erqz.webp",
+    "idPhoto": "https://example.com/id/tarek.jpg",
+    "ownershipPhoto": "https://example.com/ownership/tarek_land.jpg",
+    "title": "Al-Rastan Vegetable Farm",
+    "area": 40,
+    "price": 110000,
+    "ratingsAverage": 4.5,
+    "ratingsQuantity": 2,
+    "description": "Vegetable farm with drip irrigation system, ideal for seasonal crops.",
+    "currentCrop": [
+      "Tomatoes",
+      "Cucumbers",
+      "Peppers"
+    ],
+    "treeAge": 50,
+    "workersNumber": 5,
+    "equipments": [
+      "Sprayer",
+      "Hand tools"
+    ],
+    "waterSource": [
+      "River"
+    ],
+    "averageRainfall": 350,
+    "irrigationMethods": [
+      "Drip"
+    ],
+    "soilTypes": [
+      "Sandy loam"
+    ],
+    "suitableCrops": [
+      "Vegetables"
+    ],
+    "climateDescription": "Moderate climate, ideal for vegetable production.",
+    "estimatedReturns": "14000 USD per season",
+    "contractDuration": "5 Months",
+    "location": {
+      "coordinates": [
+        36.72,
+        34.91
+      ],
+      "address": "Vegetable area of Al-Rastan, Homs",
+      "village": "Al-Rastan"
+    },
+    "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553421/lands/gzkd3gxbxe4qf41y5toq.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553422/lands/hby0frax0qzfbncodhul.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553423/lands/fg40kte7ryicdc6qsbwv.jpg"
+    ],
+    "isApproved": "approved",
+    "status": "reserved"
+  },
+  {
+    "firstName": "Salma",
+    "lastName": "Hijazi",
+    "gender": "female",
+    "email": "salma.hijazi@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "988334455"
+    },
+    "city": "Homs",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553248/users/dab2aoywmlamyks7gnzg.png",
+    "idPhoto": "https://example.com/id/salma.jpg",
+    "ownershipPhoto": "https://example.com/ownership/salma_land.jpg",
+    "title": "Al-Rastan Fruit Orchard",
+    "area": 55,
+    "price": 160000,
+    "ratingsAverage": 4.9,
+    "ratingsQuantity": 4,
+    "description": "Fruit orchard with apples, pears, and cherries. Mountain water source ensures quality.",
+    "currentCrop": [
+      "Apples",
+      "Pears",
+      "Cherries"
+    ],
+    "treeAge": 9,
+    "workersNumber": 6,
+    "equipments": [
+      "Harvester",
+      "Pruner"
+    ],
+    "waterSource": [
+      "Spring"
+    ],
+    "averageRainfall": 480,
+    "irrigationMethods": [
+      "Sprinkler"
+    ],
+    "soilTypes": [
+      "Sandy",
+      "Loamy"
+    ],
+    "suitableCrops": [
+      "Fruits"
+    ],
+    "climateDescription": "Cool climate, suitable for orchards and fruit trees.",
+    "estimatedReturns": "20000 USD per season",
+    "contractDuration": "10 Months",
+    "location": {
+      "coordinates": [
+        36.73,
+        34.925
+      ],
+      "address": "Fruit region, Al-Rastan, Homs",
+      "village": "Al-Rastan"
+    },
+    "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553427/lands/sgflaeqiepmzrwaemwzm.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553429/lands/yn7xidjoprdsnw2851j7.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553432/lands/p8cqsit0zs4v5mpymykl.jpg"
+    ],
+    "isApproved": "approved",
+    "status": "available"
+  },
+  {
+    "firstName": "Bassel",
+    "lastName": "Rifai",
+    "gender": "male",
+    "email": "bassel.rifai@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "977889900"
+    },
+    "city": "Homs",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553249/users/uewq9y9sdq4peoszqugz.webp",
+    "idPhoto": "https://example.com/id/bassel.jpg",
+    "ownershipPhoto": "https://example.com/ownership/bassel_land.jpg",
+    "title": "Al-Rastan Mixed Crops Estate",
+    "area": 95,
+    "price": 195000,
+    "ratingsAverage": 4.7,
+    "ratingsQuantity": 6,
+    "description": "Large estate with wheat, olives, and seasonal vegetables, perfect for investors.",
+    "currentCrop": [
+      "Wheat",
+      "Olives",
+      "Onions"
+    ],
+    "treeAge": 14,
+    "workersNumber": 10,
+    "equipments": [
+      "Tractor",
+      "Seeder",
+      "Sprayer"
+    ],
+    "waterSource": [
+      "Irrigation system",
+      "Well"
+    ],
+    "averageRainfall": 310,
+    "irrigationMethods": [
+      "Drip",
+      "Sprinkler"
+    ],
+    "soilTypes": [
+      "Clay",
+      "Loamy"
+    ],
+    "suitableCrops": [
+      "Wheat",
+      "Vegetables",
+      "Olives"
+    ],
+    "climateDescription": "Semi-arid climate with access to reliable water sources.",
+    "estimatedReturns": "25000 USD per season",
+    "contractDuration": "12 Months",
+    "location": {
+      "coordinates": [
+        36.745,
+        34.927
+      ],
+      "address": "Countryside estate, Al-Rastan, Homs",
+      "village": "Al-Rastan"
+    },
+    "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553433/lands/hiuhbpt9t4qj0mpu8r24.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553434/lands/hsfpqfh5darq5ylchyus.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553436/lands/tlmf8soeeqdgoousa8sd.jpg"
+    ],
+    "isApproved": "approved",
+    "status": "reserved"
+  },
+  {
+    "firstName": "Fadi",
+    "lastName": "Haidar",
+    "gender": "male",
+    "email": "fadi.haidar@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "944778899"
+    },
+    "city": "Homs",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553250/users/g4loy1b7l3tu9evwervd.jpg",
+    "idPhoto": "https://example.com/id/fadi.jpeg",
+    "ownershipPhoto": "https://example.com/ownership/fadi_land.jpg",
+    "title": "Al-Shairat Olive Grove",
+    "area": 70,
+    "price": 160000,
+    "ratingsAverage": 4.7,
+    "ratingsQuantity": 4,
+    "description": "Olive grove in Al-Shairat with fertile soil and drip irrigation system.",
+    "currentCrop": [
+      "Olives"
+    ],
+    "treeAge": 14,
+    "workersNumber": 5,
+    "equipments": [
+      "Tractor",
+      "Sprayer"
+    ],
+    "waterSource": [
+      "Well"
+    ],
+    "averageRainfall": 360,
+    "irrigationMethods": [
+      "Drip"
+    ],
+    "soilTypes": [
+      "Loamy"
+    ],
+    "suitableCrops": [
+      "Olives",
+      "Wheat"
+    ],
+    "climateDescription": "Mediterranean climate with mild winters and warm summers.",
+    "estimatedReturns": "17000 USD per season",
+    "contractDuration": "6 Months",
+    "location": {
+      "coordinates": [
+        36.742,
+        34.918
+      ],
+      "address": "Al-Shairat countryside, Homs",
+      "village": "Al-Shairat"
+    },
+    "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553436/lands/wvinsnknxr9xpjelb9tq.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553438/lands/uclfdcmu9mugnw9x9yez.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553439/lands/epowlyccqh6mjvqluwpc.jpg"
+    ],
+    "isApproved": "approved",
+    "status": "available"
+  },
+  {
+    "firstName": "Mona",
+    "lastName": "Khalil",
+    "gender": "female",
+    "email": "mona.khalil@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "933221144"
+    },
+    "city": "Homs",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553251/users/mg5zohlwq8npdcrlm89h.jpg",
+    "idPhoto": "https://example.com/id/mona.jpg",
+    "ownershipPhoto": "https://example.com/ownership/mona_land.jpg",
+    "title": "Talbiseh Vineyard",
+    "area": 65,
+    "price": 150000,
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 5,
+    "description": "Vineyard in Talbiseh with high-quality grape production and modern irrigation.",
+    "currentCrop": [
+      "Grapes"
+    ],
+    "treeAge": 9,
+    "workersNumber": 6,
+    "equipments": [
+      "Harvester",
+      "Plough"
+    ],
+    "waterSource": [
+      "Spring",
+      "Rainwater"
+    ],
+    "averageRainfall": 400,
+    "irrigationMethods": [
+      "Sprinkler"
+    ],
+    "soilTypes": [
+      "Clay",
+      "Silty"
+    ],
+    "suitableCrops": [
+      "Grapes",
+      "Fruits"
+    ],
+    "climateDescription": "Cool climate ideal for vineyards.",
+    "estimatedReturns": "20000 USD per season",
+    "contractDuration": "12 Months",
+    "location": {
+      "coordinates": [
+        36.732,
+        34.834
+      ],
+      "address": "Talbiseh countryside, Homs",
+      "village": "Talbiseh"
+    },
+    "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553439/lands/wbn48dfgly8nksbtjqrb.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553440/lands/ocfv7yea7edqymodth7u.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553441/lands/iakwdpohwznq6r1bjcee.jpg"
+    ],
+    "isApproved": "approved",
+    "status": "available"
+  },
+  {
+    "firstName": "Karim",
+    "lastName": "Darwish",
+    "gender": "male",
+    "email": "karim.darwish@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "955667700"
+    },
+    "city": "Homs",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553252/users/dznqedaow2fcrmpryq2o.jpg",
+    "idPhoto": "https://example.com/id/karim.jpg",
+    "ownershipPhoto": "https://example.com/ownership/karim_land.jpg",
+    "title": "Qusayr Mixed Crops Farm",
+    "area": 90,
+    "price": 190000,
+    "ratingsAverage": 4.5,
+    "ratingsQuantity": 6,
+    "description": "Farm in Qusayr with wheat, olives, and vegetables. Excellent irrigation system.",
+    "currentCrop": [
+      "Wheat",
+      "Vegetables",
+      "Olives"
+    ],
+    "treeAge": 10,
+    "workersNumber": 7,
+    "equipments": [
+      "Seeder",
+      "Tractor",
+      "Sprayer"
+    ],
+    "waterSource": [
+      "Irrigation system"
+    ],
+    "averageRainfall": 310,
+    "irrigationMethods": [
+      "Drip",
+      "Sprinkler"
+    ],
+    "soilTypes": [
+      "Clay loam"
+    ],
+    "suitableCrops": [
+      "Wheat",
+      "Vegetables",
+      "Olives"
+    ],
+    "climateDescription": "Semi-arid with sufficient irrigation for diverse crops.",
+    "estimatedReturns": "22000 USD per season",
+    "contractDuration": "9 Months",
+    "location": {
+      "coordinates": [
+        36.58,
+        34.51
+      ],
+      "address": "Countryside of Qusayr, Homs",
+      "village": "Qusayr"
+    },
+    "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553442/lands/zimzdynm2e3wglfkytlo.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553443/lands/q30ltsqqfsvvlrgmv70u.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553444/lands/iws0qf8aveivzzu4cj19.jpg"
+    ],
+    "isApproved": "approved",
+    "status": "available"
+  },
+  {
+    "firstName": "Rani",
+    "lastName": "Issa",
+    "gender": "male",
+    "email": "rani.issa@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "966112244"
+    },
+    "city": "Homs",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553253/users/lqcrup0rveizmnhvbiu2.jpg",
+    "idPhoto": "https://example.com/id/rana.jpg",
+    "ownershipPhoto": "https://example.com/ownership/rana_land.jpg",
+    "title": "Al-Qaryatayn Herb Farm",
+    "area": 45,
+    "price": 120000,
+    "ratingsAverage": 4.6,
+    "ratingsQuantity": 3,
+    "description": "Herb farm in Al-Qaryatayn producing thyme and rosemary. Organic certified.",
+    "currentCrop": [
+      "Thyme",
+      "Rosemary"
+    ],
+    "treeAge": 6,
+    "workersNumber": 4,
+    "equipments": [
+      "Dryer",
+      "Sprayer"
+    ],
+    "waterSource": [
+      "Rain-fed"
+    ],
+    "averageRainfall": 280,
+    "irrigationMethods": [
+      "Drip"
+    ],
+    "soilTypes": [
+      "Chalky"
+    ],
+    "suitableCrops": [
+      "Herbs",
+      "Vegetables"
+    ],
+    "climateDescription": "Dry climate, ideal for herbs and medicinal plants.",
+    "estimatedReturns": "15000 USD per season",
+    "contractDuration": "6 Months",
+    "location": {
+      "coordinates": [
+        37.235,
+        34.23
+      ],
+      "address": "Countryside of Al-Qaryatayn, Homs",
+      "village": "Al-Qaryatayn"
+    },
+    "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553444/lands/n5y2aojuiywzs0w9c2b0.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553445/lands/fljcuh4ubcddrjwhhggw.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553446/lands/egwsjjvwrkpputkewwbt.jpg"
+    ],
+    "isApproved": "approved",
+    "status": "reserved"
+  },
+  {
+    "firstName": "Nader",
+    "lastName": "Shami",
+    "gender": "male",
+    "email": "nader.shami@example.com",
+    "phone": {
+      "areaCode": "+963",
+      "number": "955334466"
+    },
+    "city": "Homs",
+    "userPhoto": "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553254/users/jawcgogfpgdqyzjj4wee.jpg",
+    "idPhoto": "https://example.com/id/nader.jpg",
+    "ownershipPhoto": "https://example.com/ownership/nader_land.jpg",
+    "title": "Palmyra Date Farm",
+    "area": 100,
+    "price": 200000,
+    "ratingsAverage": 4.9,
+    "ratingsQuantity": 7,
+    "description": "Date farm in Palmyra desert with modern irrigation. High yield resistant to drought.",
+    "currentCrop": [
+      "Dates"
+    ],
+    "treeAge": 18,
+    "workersNumber": 10,
+    "equipments": [
+      "Irrigation pumps",
+      "Harvester"
+    ],
+    "waterSource": [
+      "Irrigation system"
+    ],
+    "averageRainfall": 150,
+    "irrigationMethods": [
+      "Drip",
+      "Flood"
+    ],
+    "soilTypes": [
+      "Sandy"
+    ],
+    "suitableCrops": [
+      "Dates",
+      "Cotton"
+    ],
+    "climateDescription": "Arid desert climate, perfect for date palms.",
+    "estimatedReturns": "30000 USD per season",
+    "contractDuration": "12 Months",
+    "location": {
+      "coordinates": [
+        38.28,
+        34.55
+      ],
+      "address": "Palmyra countryside, Homs",
+      "village": "Palmyra"
+    },
+    "landMedia": [
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553447/lands/yc9myqbcomikuskghumg.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553448/lands/k30zxu1jhlfeygmcnnu5.jpg",
+      "https://res.cloudinary.com/dc57rhb7w/image/upload/v1757553449/lands/lcx3cebj02t0n6ungin7.jpg"
     ],
     "isApproved": "approved",
     "status": "reserved"
