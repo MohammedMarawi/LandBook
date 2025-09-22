@@ -1,0 +1,44 @@
+.contact-container-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 14px;
+  }
+  
+  .contact-card {
+    background-color: #fff;
+    padding: 24px;
+    text-align: center;
+    width: 340px;
+     border-radius: 12px;
+  }
+  
+  .profile-pic {
+    width: 100%;
+    transform: scaleX(2);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    height: 300px;
+  }
+  
+  .info-card-details1 p {
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    margin: 12px 0;
+    justify-content: center;
+  }
+  
+  .info a {
+    color: #0ea5e9;
+    text-decoration: none;
+  }
+  
+  .info a:hover {
+    text-decoration: underline;
+  }
+  
+  .icon1 {
+    margin-right: 8px;
+  }

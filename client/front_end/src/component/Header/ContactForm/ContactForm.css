@@ -1,0 +1,159 @@
+/* ================= FORM CONTAINER ================= */
+form {
+  max-width: 950px;
+  margin: 50px auto;
+  padding: 40px;
+  font-family: "Segoe UI", Arial, sans-serif;
+
+  /* خلفية مميزة مع تدرج عصري */
+  background-color: #dff5e8;
+
+  /* زوايا مستديرة أكبر */
+  border-radius: 24px;
+
+  /* ظل عميق يعطي إحساس بالارتفاع */
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1), 
+              0 4px 8px rgba(0, 0, 0, 0.06);
+
+  transition: all 0.3s ease;
+}
+
+form:hover {
+  /* رفع الظل عند hover لإحساس ديناميكي */
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.14), 
+              0 6px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+
+
+/* ================= HEADINGS ================= */
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 30px 0 20px;
+  color: #1a3d1a;
+  border-left: 5px solid #38a169;
+  padding-left: 12px;
+  letter-spacing: 0.5px;
+}
+
+/* ================= GRID ================= */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================= INPUTS ================= */
+.border {
+  width: 100%;
+  padding: 16px 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  font-size: 15px;
+  background: #fefefe;
+  transition: all 0.3s ease;
+}
+
+.border:focus {
+  border-color: #2f855a;
+  outline: none;
+  box-shadow: 0 0 8px rgba(56, 161, 105, 0.3);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  transition: all 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #2f855a;
+  box-shadow: 0 0 8px rgba(56, 161, 105, 0.3);
+}
+
+/* ================= FILE INPUT ================= */
+input[type="file"] {
+  padding: 12px;
+  border: 2px dashed #a0aec0;
+  border-radius: 12px;
+  background: #f9fafb;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="file"]:hover {
+  background: #e6f3ea;
+  border-color: #38a169;
+}
+
+/* ================= BUTTON ================= */
+button, .post-land-btn {
+  background: linear-gradient(135deg, #38a169, #2f855a);
+  color: white;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+button:hover, .post-land-btn:hover {
+  background: linear-gradient(135deg, #276749, #1e4d34);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+}
+
+/* ================= SECTIONS ================= */
+section {
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+/* ================= FLEX CENTER ================= */
+.flex {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.imagetofram {
+  position: relative;
+  margin: 40px auto;
+  max-width: 1200px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #e6f4ea, #ffffff); /* أخضر باهت متدرج */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08); /* ظل خفيف */
+  transition: transform 0.3s ease;
+}
+
+.imagetofram:hover {
+  transform: translateY(-3px);
+}
+
+.imagetofram img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+}
+
+/* ================= LABELS ================= */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #1f2937;
+}

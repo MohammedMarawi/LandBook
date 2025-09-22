@@ -1,0 +1,102 @@
+.welcom-container{
+    background-image: url("/lands/bg.jpg");
+    background-size: cover;
+    background-position: center;
+     margin: 0px;
+    height: 100vh;
+    overflow: hidden;
+ }
+   
+    .welcome{
+       min-width: 300px;
+       max-width: 500px;
+       position: relative;
+       margin-top: 60px;
+       margin-left: 60px;
+       border-radius: 15px;
+       background: #ffffff54;
+    }
+ 
+    .welcome .form-welcome-f div input,
+    .welcome .form-welcome-f div button{
+     width: 95%;
+     margin: 10px;
+     padding: 10px;
+     border-radius: 8px;
+     border: 1px solid #eee;
+    }
+ 
+    .welcome .form-welcome-f div label{
+      padding: 10px;
+    }
+ 
+    .welcome .form-welcome-f div .sign-welcome,
+    .sign-welcome{
+       background: #338b37;
+       border: none;
+ 
+    }
+    .welcome .form-welcome-f div .or-welcome{
+     text-align: center;
+    }
+    .welcome .form-welcome-f div .Sign-Google-welcome{
+     color: black;
+    }
+    .welcome .form-welcome-f .tf{
+     margin: 20px auto;
+    }
+    .welcome .form-welcome-f .footer-form-welcome{
+       background: white;
+       padding: 20px;
+       position: absolute;
+       width: 100%;
+       left: 0px;
+       text-align: center;
+       margin-top: 20px;
+       bottom: -36px;
+       border-radius: 0px 0px 15px 15px;
+    }
+    .welcome .form-welcome-f .footer-form-welcome a{
+     text-decoration: none;
+     color: #338b37;
+    }
+    .welcome .title-img-welcome {
+     display: flex;
+     justify-content: space-between;
+     padding: 10px;
+     align-items: center;
+    }
+    
+   .sign-welcome{
+      background: #338b37;
+      border: none;
+
+   }
+  .or-welcome{
+    text-align: center;
+   }
+
+   /* .toat{
+      width: 42%;
+      height: 60px;
+      color: black;
+      background: #ffffff;
+      border-radius: 15px;
+      margin-left: 62px;
+      position: relative;
+      bottom: -42px;
+   } */
+
+    @media (max-width:700px){
+        .welcom-container{
+           background-image:none;
+        }
+        .welcome{
+           width: 400px;
+           margin-top:30px;
+           margin-left: 20px;
+           background: #c6c6c6;
+        }
+     }
+  
+ 

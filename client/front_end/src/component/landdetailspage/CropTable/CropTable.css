@@ -1,0 +1,45 @@
+.table-container {
+    padding: 20px;
+    max-width: 97%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .crop-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #B3B3B3;
+  }
+
+  .crop-table tr:nth-child(odd){
+    background-color: #EDFFD8;
+
+  }
+  
+  .crop-table th,
+  .crop-table td {
+    padding: 25px;
+    text-align: center;
+  }
+  
+  .crop-table thead {
+    border: 1px solid #B3B3B3;
+    background-color: white;
+  }
+
+  .crop-table thead th{
+    background: white;
+  }
+  .email {
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+  }

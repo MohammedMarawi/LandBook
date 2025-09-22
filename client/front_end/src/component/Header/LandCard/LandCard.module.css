@@ -1,0 +1,188 @@
+/* البطاقة الرئيسية */
+.card {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  background: linear-gradient(135deg, #f9fafb, #e6f0ea);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  min-height: 420px;
+  position: relative;
+}
+
+/* تأثير hover للبطاقة */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.18), 0 32px 64px rgba(0,0,0,0.12);
+  background: linear-gradient(135deg, #e0f2f1, #c8e6c9);
+}
+
+/* صورة الأرض */
+.image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.4s ease;
+  border-bottom: 1px solid #ddd;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* محتوى البطاقة */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+/* عنوان الأرض */
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 8px;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.card:hover .title {
+  color: #2f855a;
+}
+
+/* وصف الأرض */
+.desc {
+  font-size: 15px;
+  color: #555;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+/* معلومات إضافية: السعر، المساحة، الموقع */
+.info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 14px;
+}
+
+.info span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #f7fafc;
+  padding: 6px 12px;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #1a202c;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.card:hover .info span {
+  background: linear-gradient(135deg, #e0f2f1, #c8e6c9);
+  color: #22543d;
+}
+
+/* أيقونات داخل المعلومات */
+.info i {
+  font-size: 16px;
+  color: #38a169;
+}
+
+/* الفوتر: صورة المالك + زر التواصل */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+/* معلومات المالك */
+.ownerInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+.ownerInfo img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #38a169;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover .ownerInfo img {
+  transform: scale(1.1);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+}
+
+/* زر التواصل */
+.contactButton {
+  padding: 6px 22px;
+  background: linear-gradient(135deg, #38a169, #2f855a);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contactButton:hover {
+  background: linear-gradient(135deg, #2f855a, #276749);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+}
+
+/* انيميشن دخول البطاقة */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+  animation: fadeUp 0.5s ease forwards;
+}
+/* الحاوية الرئيسية للبطاقات */
+.fullcontainer {
+  display: flex;               /* لعرض البطاقات أفقياً */
+  flex-wrap: nowrap;           /* منع التفاف البطاقات لصفوف أخرى */
+  gap: 24px;                   /* المسافة بين البطاقات */
+  overflow-x: auto;            /* تمرير أفقي إذا زاد المحتوى */
+  overflow-y: hidden;
+  padding-bottom: 1rem;        /* مساحة أسفل scrollbar */
+  scroll-behavior: smooth;
+}
+
+/* إخفاء scrollbar بشكل أنيق (اختياري) */
+.fullcontainer::-webkit-scrollbar {
+  height: 6px;
+}
+
+.fullcontainer::-webkit-scrollbar-thumb {
+  background: rgba(56, 161, 105, 0.6);
+  border-radius: 3px;
+}
+
+.fullcontainer::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* يمكن إضافة تأثير fade-in عند تمرير البطاقات */
+.card {
+  min-width: 360px; /* نفس عرض البطاقة */
+  flex-shrink: 0;   /* منع تصغير البطاقة عند ضغط flex */
+  animation: fadeUp 0.5s ease forwards;
+}

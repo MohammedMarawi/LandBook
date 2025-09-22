@@ -1,0 +1,15 @@
+:root{
+    --main_color:#338b37;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url(./assets/fonts/Rubik/Rubik-VariableFont_wght.ttf) format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+  }
+

@@ -1,0 +1,98 @@
+.footer {
+  background: linear-gradient(135deg, #0a2f1f, #174117); /* تدرج أخضر فاخر */
+  color: #f5f5f5;
+  padding: 50px 20px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.footer-description {
+  text-align: center;
+  margin-bottom: 35px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #dcdcdc;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+  padding: 0 15px;
+  border-right: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.footer-column:last-child {
+  border-right: none;
+}
+
+.footer-column h4 {
+  font-size: 20px; /* أكبر قليلًا */
+  margin-bottom: 20px;
+  color: #ffd700; /* ذهبي */
+  font-weight: 800; /* أثخن من السابق */
+  font-family: 'Montserrat', Arial, sans-serif; /* خط عصري */
+  border-bottom: 2px solid rgba(255, 215, 0, 0.4);
+  display: inline-block;
+  padding-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin: 12px 0;
+}
+
+.footer-column ul li a {
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #ffd700; /* الذهبي عند hover */
+  text-decoration: underline;
+}
+
+.social-icons {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.social-icons a {
+  margin: 0 8px;
+  color: #ffd700;
+  font-size: 22px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255, 215, 0, 0.3);
+  margin-top: 40px;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #bbb;
+}

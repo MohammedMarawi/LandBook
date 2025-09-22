@@ -1,0 +1,368 @@
+/* قسم الفلترة */
+.filter-container {
+  background: linear-gradient(135deg, #f5f7fa, #e4ebf1); /* تدرج لوني خفيف */
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05), 0 4px 14px rgba(0,0,0,0.07); /* ظل داخلي وخارجي */
+  animation: fadeIn 0.5s ease-in-out;
+  transition: all 0.3s ease;
+
+  display: flex;           /* تحويل الحاوية إلى flex */
+  flex-direction: column;  /* ترتيب العناصر عمودياً */
+  gap: 25px;               /* المسافة بين كل select والزر */
+}
+
+/* hover effect خفيف */
+.filter-container:hover {
+  transform: translateY(-2px);
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.07), 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.filter-item {
+  margin-bottom: 15px;
+}
+
+/* select أنيق */
+select, .sortselect {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+select:hover, .sortselect:hover {
+  border-color: #38a169;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+select:focus, .sortselect:focus {
+  outline: none;
+  border-color: #2f855a;
+  box-shadow: 0 4px 14px rgba(56,161,105,0.25);
+}
+
+/* زر عرض النتائج */
+.view-results-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #38a169, #2f855a);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.view-results-btn:hover {
+  background: linear-gradient(135deg, #2f855a, #276749);
+  transform: translateY(-2px);
+}
+
+/* الصفحة */
+.property-page {
+  display: flex;
+  padding: 30px;
+  gap: 20px;
+  animation: slideIn 0.6s ease;
+}
+
+/* تنسيق قسم الفلترة */
+.filter-section {
+  padding-right: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  width: 35%;
+}
+
+/* قائمة العقارات */
+.property-list-header {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 7px;
+}
+
+/* البطاقة الرئيسية للعقار */
+.property-item {
+  display: flex;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #f8faf9, #e6f0ea); /* أخضر فاتح + أبيض */
+  border-radius: 18px; /* أكثر نعومة */
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  animation: fadeUp 0.5s ease forwards;
+}
+
+.property-item:hover {
+  transform: translateY(-14px); /* ارتفاع أكثر بروزًا */
+  box-shadow: 
+    0 16px 32px rgba(0,0,0,0.15),
+    0 24px 48px rgba(0,0,0,0.1); /* ظل متعدد الطبقات */
+  background: linear-gradient(135deg, #dff4e1, #c8e6d4); /* أخضر فاتح مع لمسة طبيعية */
+}
+
+/* صورة العقار */
+.property-image {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.favorite-button {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-size: 32px;        /* أكبر قليلاً */
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+  z-index: 2;
+  display: none;
+  outline: none;
+}
+
+.favorite-button.active {
+  color: red;
+  animation: pulse 0.5s ease; /* تأثير النبض */
+}
+
+.property-item:hover .favorite-button {
+  display: block;
+}
+
+/* إزالة أي تأثير غير مرغوب عند الضغط */
+.favorite-button:focus,
+.favorite-button:active,
+.favorite-button:hover {
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+}
+
+/* تأثير نبض عند الإضافة */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+
+.property-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.property-item:hover .property-image img {
+  transform: scale(1.1);
+}
+
+
+/* التفاصيل الداخلية */
+.property-details {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.property-header {
+  display: flex;
+  gap: 25px; /* مسافة بين الأعمدة */
+  margin-bottom: 15px;
+}
+
+.property-price,
+.property-size,
+.property-location {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* المسافة بين الأيقونة والنص */
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a202c; /* لون نص داكن عصري */
+  background: #f7fafc; /* خلفية خفيفة للأيقونة والنص */
+  padding: 6px 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08); /* ظل خفيف يعطي عمق */
+  transition: all 0.4s ease;
+}
+
+.property-price i,
+.property-size i,
+.property-location i {
+  font-size: 20px;
+  color: #38a169; /* لون أيقونة أخضر عصري */
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.property-item:hover .property-price,
+.property-item:hover .property-size,
+.property-item:hover .property-location {
+  background: linear-gradient(135deg, #e0f2f1, #c8e6c9); /* تدرج أنيق عند hover */
+  color: #22543d; /* نص داكن عند hover */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.property-item:hover .property-price i,
+.property-item:hover .property-size i,
+.property-item:hover .property-location i {
+  transform: scale(1.3); /* تكبير الأيقونة */
+  color: #2f855a; /* لون أيقونة أغمق */
+}
+
+/* إذا تريد شكل دائري للأيقونات */
+.property-price i,
+.property-size i,
+.property-location i {
+  background: #f0fff4;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+
+/* الوصف */
+.property-description {
+  color: #555;
+  text-align: center;
+  margin: 15px auto;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* الفوتر */
+.property-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.owner-info {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* المسافة بين الصورة والاسم */
+  color: #333;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.owner-info img {
+  width: 40px; /* حجم الشعار */
+  height: 40px;
+  border-radius: 50%; /* دائري */
+  object-fit: cover;
+  border: 2px solid #38a169; /* إطار بسيط وعصري */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property-item:hover .owner-info img {
+  transform: scale(1.1); /* تكبير خفيف عند hover */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* بروز لطيف */
+}
+
+.owner-info span {
+  display: inline-block;
+  vertical-align: middle;
+  color: #2d3748; /* لون عصري وواضح */
+}
+
+/* زر التواصل */
+.contact-button {
+  padding: 8px 20px;
+  background: linear-gradient(135deg, #38a169, #2f855a);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.contact-button:hover {
+  background: linear-gradient(135deg, #2f855a, #276749);
+  transform: translateY(-2px);
+}
+
+
+/* sort select */
+.sortselect {
+  width: 14%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: white;
+  font-size: 14px;
+}
+
+/* أنيميشن */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width:760px){
+  .property-page{
+    flex-wrap: wrap;
+  }
+}
+
+
+/* باقي الأكواد ... */
+
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.image-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}

@@ -1,0 +1,27 @@
+  .image1 {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    margin-top: 40px;
+
+  }
+  .property-image1{
+    padding-top: 20px;
+  }
+
+  .property-header1 p,
+  .property-description1,
+  .owner-info1{
+    padding: 15px;
+  }
+  
+  .contact-button1{
+     background-color: #28a745;
+     color: white;
+     padding: 12px 25px;
+     border: none;
+     border-radius: 6px;
+     font-size: 16px;
+     cursor: pointer;
+     margin: 15px;
+  }

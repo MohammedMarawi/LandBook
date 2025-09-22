@@ -6,7 +6,6 @@ const startServer = require('./config/server');
 require('dotenv').config();
 const app = express();
 
-
 configureApp(app);
 
 (async () => {

@@ -1,0 +1,83 @@
+.container_landinfo {
+  padding: 30px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.top-button {
+  display: flex;
+  justify-content: center;
+}
+
+.button-map {
+  background-color: var(--main_color);
+  color: white;
+  padding: 6px 66px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 58px;
+}
+
+
+.button-readmore{
+  background-color: var(--main_color);
+  color: white;
+  padding: 6px 27px;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  right: 6%;
+  bottom: 65px;
+}
+
+.bottom-button{
+  display: flex;
+  margin: 20px auto;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 6px;
+  flex: 1;
+  max-width: 32%;
+  padding: 20px;
+  border: 1px solid #B3B3B3;
+  text-align: left;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 6px;
+  border-radius: 2px;
+}
+
+.card p {
+  margin: 8px 0;
+  padding: 7px 5px;
+  line-height: 1.7;
+}
+
+ul li{
+  list-style-type: none;
+}
+
+.card p:nth-child(even){
+  background-color: #EDFFD8;
+}
+
+.card .headercard{
+  margin: 8px 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
